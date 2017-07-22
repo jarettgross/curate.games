@@ -1,7 +1,14 @@
 ---
 ---
 
+//============
+// Imports
+//============
 @import 'flexbox.scss';
+
+//============
+// General
+//============
 
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
@@ -32,6 +39,66 @@ a {
 
     :hover {
         color: #111;
-        text-decoration: underline;
+        text-decoration: none;
     }
+}
+
+//============
+// Sidebar
+//============
+
+.sidebar-container {
+    position: absolute;
+    width: 250px;
+    height: 100vh;
+    background: #f8f8f8;
+    overflow: hidden;
+
+    .sidebar {
+        margin: 30px 0;
+        height: 90%;
+        overflow: auto;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: -17px;
+        position: absolute;
+
+        .post-link-container {
+
+            .post-link {
+                display: inline-block;
+                width: 85%;
+                padding: 7px 0;
+                margin-left: 10%;
+                border-style: hidden hidden solid hidden;
+                border-width: 1px;
+
+                .img-sm {
+                    vertical-align: middle;
+                }
+
+                .post-info-container {
+                    display: inline-block;
+                    vertical-align: middle;
+                    height: 40px;
+
+                    .post-date {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//============
+// Main
+//============
+
+.main {
+    position: absolute;
+    width: calc(100vw - 250px);
+    height: 100vh;
+    left: 250px;
 }

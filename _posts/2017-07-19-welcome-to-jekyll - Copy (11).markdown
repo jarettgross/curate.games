@@ -1,5 +1,5 @@
 ---
-title:  Super Mario Galaxy
+title:  "Welcome to Jekyll!"
 date:   2017-07-19 19:45:36 -0700
 categories: game
 image:  SuperMarioGalaxy.png
