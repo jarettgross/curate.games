@@ -8,6 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Games</title>
+        <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="/css/main.css">
     </head>
     <body>
@@ -31,42 +32,46 @@
             </div>
         </div>
         <div class="main">
-            <div class="img-lg"></div>
+            {% assign post = site.posts.first %}
+            <img class="img-sm" src="assets/images/{{ post.image }}" height="300">
             <div class="game-info-container">
-                <h4 class="game-title"><!-- Title --></h4>
+                <h4 class="game-title">{{ post.title }}</h4>
                 <div class="game-platforms">
-                    <!-- Font Awesome controller icon -->
-                    <!-- List, of, platforms -->
+                    <i class="fa fa-gamepad" aria-hidden="true"></i>
+                    {{ post.platforms }}
                 </div>
                 <div class="game-score-length-container">
                     <div class="game-how-long">
-                        <!-- Font Awesome clock icon -->
-                        <!-- Time taken from post -->
-                        <!-- Font Awesome outside link icon -->
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        {{ post.howLong }} hours
+                        <i class="fa fa-external-link-square" aria-hidden="true"></i>
                     </div>
                     <div class="game-score">
-                        <!-- Font Awesome ? icon -->
-                        <!-- Score taken from post -->
-                        <!-- Font Awesome outside link icon -->
+                        <i class="fa fa-line-chart" aria-hidden="true"></i>
+                        {{ post.howLong }} / 10
+                        <i class="fa fa-external-link-square" aria-hidden="true"></i>
                     </div>
                 </div>
                 <div class="game-replay-difficulty-container">
                     <div class="game-replay-value-container">
                         <h5 class="game-replay-value">Replay Value</h5>
-                        <!-- Stars taken from post -->
+                        {% for i in (1..post.replayValue) %}
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        {% endfor %}
                     </div>
                     <div class="game-difficulty-container">
                         <h5 class="game-difficulty">Difficulty</h5>
-                        <!-- Stars taken from post -->
+                        {% for i in (1..post.difficulty) %}
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        {% endfor %}
                     </div>
                 </div>
                 <div class="game-blurb-review">
-                    <!-- Blurb/review taken from post -->
+                    {{ post.blurb }}
                 </div>
                 <div class="game-price-container">
-                    <!-- Price taken from post -->
-                    <a href="" class="game-purchase-link">BUY</a>
-                    <!-- ^ href taken from post -->
+                    ${{ post.price }}
+                    <a href="{{ post.purchaseLink }}" class="game-purchase-link">BUY</a>
                 </div>
             </div>
         </div>
