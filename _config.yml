@@ -28,6 +28,7 @@ markdown: kramdown
 theme: minima
 sass:
     sass_dir: _sass
+    style: compressed
 plugins:
   - jekyll-feed
 

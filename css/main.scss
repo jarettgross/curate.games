@@ -101,4 +101,55 @@ a {
     width: calc(100vw - 250px);
     height: 100vh;
     left: 250px;
+    @include flexbox;
+    @include align-items(center);
+
+    .game-info-container {
+        margin: auto;
+        text-align: center;
+        width: 100%;
+
+        .img-lg {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .game-details-container {
+            display: inline-block;
+            max-width: 40%;
+            text-align: left;
+
+            .game-score-length-container{
+                .game-how-long {
+                    display: inline-block;
+                    margin-right: 30px;
+                }
+
+                .game-score {
+                    display: inline-block;
+                }
+            }
+
+            .game-replay-difficulty-container {
+                .game-replay-value-container {
+                    display: inline-block;
+                    margin-right: 30px;
+                }
+
+                .game-difficulty-container {
+                    display: inline-block;
+                }
+            }
+
+            .category-icon {
+                width: 13px;
+                margin-right: 10px;
+            }
+
+            .external-link-icon {
+                cursor: pointer;
+            }
+        }
+    }
+
 }

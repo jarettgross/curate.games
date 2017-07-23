@@ -10,6 +10,7 @@
         <title>Games</title>
         <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/mobile.css">
     </head>
     <body>
         <div class="sidebar-container">
@@ -33,45 +34,51 @@
         </div>
         <div class="main">
             {% assign post = site.posts.first %}
-            <img class="img-sm" src="assets/images/{{ post.image }}" height="300">
             <div class="game-info-container">
-                <h4 class="game-title">{{ post.title }}</h4>
-                <div class="game-platforms">
-                    <i class="fa fa-gamepad" aria-hidden="true"></i>
-                    {{ post.platforms }}
-                </div>
-                <div class="game-score-length-container">
-                    <div class="game-how-long">
-                        <i class="fa fa-clock-o" aria-hidden="true"></i>
-                        {{ post.howLong }} hours
-                        <i class="fa fa-external-link-square" aria-hidden="true"></i>
+                <img class="img-lg" src="assets/images/{{ post.image }}" height="300">
+                <div class="game-details-container">
+                    <h2 class="game-title">{{ post.title }}</h2>
+                    <div class="game-platforms">
+                        <i class="fa fa-gamepad category-icon" aria-hidden="true"></i>
+                        {{ post.platforms }}
                     </div>
-                    <div class="game-score">
-                        <i class="fa fa-line-chart" aria-hidden="true"></i>
-                        {{ post.howLong }} / 10
-                        <i class="fa fa-external-link-square" aria-hidden="true"></i>
+                    <div class="game-score-length-container">
+                        <div class="game-how-long">
+                            <i class="fa fa-clock-o category-icon" aria-hidden="true"></i>
+                            {{ post.howLong }} hours
+                            <a href="{{ post.howLongToBeatLink }}">
+                                <i class="fa fa-external-link-square external-link-icon" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="game-score">
+                            <i class="fa fa-line-chart category-icon" aria-hidden="true"></i>
+                            {{ post.score }} / 10
+                            <a href="{{ post.metacriticLink }}">
+                                <i class="fa fa-external-link-square external-link-icon" aria-hidden="true"></i>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="game-replay-difficulty-container">
-                    <div class="game-replay-value-container">
-                        <h5 class="game-replay-value">Replay Value</h5>
-                        {% for i in (1..post.replayValue) %}
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                        {% endfor %}
+                    <div class="game-replay-difficulty-container">
+                        <div class="game-replay-value-container">
+                            <h5 class="game-replay-value">Replay Value</h5>
+                            {% for i in (1..post.replayValue) %}
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            {% endfor %}
+                        </div>
+                        <div class="game-difficulty-container">
+                            <h5 class="game-difficulty">Difficulty</h5>
+                            {% for i in (1..post.difficulty) %}
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            {% endfor %}
+                        </div>
                     </div>
-                    <div class="game-difficulty-container">
-                        <h5 class="game-difficulty">Difficulty</h5>
-                        {% for i in (1..post.difficulty) %}
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                        {% endfor %}
+                    <div class="game-blurb-review">
+                        {{ post.blurb }}
                     </div>
-                </div>
-                <div class="game-blurb-review">
-                    {{ post.blurb }}
-                </div>
-                <div class="game-price-container">
-                    ${{ post.price }}
-                    <a href="{{ post.purchaseLink }}" class="game-purchase-link">BUY</a>
+                    <div class="game-price-container">
+                        ${{ post.price }}
+                        <a href="{{ post.purchaseLink }}" class="game-purchase-link">BUY</a>
+                    </div>
                 </div>
             </div>
         </div>
