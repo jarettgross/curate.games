@@ -1,5 +1,6 @@
 ---
-categories: game
+layout: post
+url: 2017/07/19
 date:  2017-07-19 19:45:36 -0700
 title: Super Mario Galaxy
 image: SuperMarioGalaxy.png
