@@ -2,6 +2,10 @@
 ---
 
 //============
+// Variables
+//============
+
+//============
 // Imports
 //============
 @import 'flexbox.scss';
@@ -19,8 +23,7 @@ dl, dd, ol, ul, figure {
 
 body {
     font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #111;
-    background-color: #fdfdfd;
+    color: #fff;
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
     -moz-font-feature-settings: "kern" 1;
@@ -30,17 +33,39 @@ body {
 }
 
 a {
-    color: #2a7ae2;
+    color: #fff;
     text-decoration: none;
 
     :visited {
-        color: #1756a9;
+
     }
 
     :hover {
-        color: #111;
         text-decoration: none;
     }
+}
+
+//============
+// Background
+//============
+
+.background-overlay {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: hard-light;
+    -webkit-filter: blur(50px);
+    filter: blur(50px);
+}
+
+.page-wrapper {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(23, 0, 38, 0.6);
 }
 
 //============
@@ -51,7 +76,6 @@ a {
     position: absolute;
     width: 250px;
     height: 100vh;
-    background: #f8f8f8;
     overflow: hidden;
 
     .sidebar {
@@ -63,16 +87,18 @@ a {
         bottom: 0;
         right: -17px;
         position: absolute;
+        -webkit-mask-image: -webkit-gradient(linear, left 50%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.2)));
 
         .post-link-container {
 
             .post-link {
                 display: inline-block;
-                width: 85%;
+                width: 90%;
                 padding: 7px 0;
                 margin-left: 10%;
                 border-style: hidden hidden solid hidden;
                 border-width: 1px;
+                border-color: rgba(255, 255, 255, 0.2);
 
                 .img-sm {
                     vertical-align: middle;
@@ -85,41 +111,11 @@ a {
 
                     .post-date {
                         font-size: 12px;
+                        color: #e2e2e2;
                     }
                 }
             }
         }
-    }
-
-    .fadeout {
-        display: none;
-        margin: 30px 0;
-        height: 100vh;
-        width: 250px;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        position: absolute;
-        background: -webkit-linear-gradient(
-            rgba(255, 255, 255, 0) 0%,
-            rgba(255, 255, 255, 1) 100%
-        );
-        background-image: -moz-linear-gradient(
-            rgba(255, 255, 255, 0) 0%,
-            rgba(255, 255, 255, 1) 100%
-        );
-        background-image: -o-linear-gradient(
-            rgba(255, 255, 255, 0) 0%,
-            rgba(255, 255, 255, 1) 100%
-        );
-        background-image: linear-gradient(
-            rgba(255, 255, 255, 0) 0%,
-            rgba(255, 255, 255, 1) 100%
-        );
-        background-image: -ms-linear-gradient(
-            rgba(255, 255, 255, 0) 0%,
-            rgba(255, 255, 255, 1) 100%
-        );
     }
 }
 
@@ -154,58 +150,65 @@ a {
             text-align: left;
             height: 300px;
 
-            .game-title {
-                margin-bottom: 10px;
-                line-height: 0.9;
-            }
+            .game-details-wrapper {
+                height: 100%;
+                @include flexbox;
+                @include flex-direction(column);
+                @include justify-content(space-between);
 
-            .game-score-length-container {
-                margin-bottom: 15px;
+                .game-details {
 
-                .game-how-long {
-                    display: inline-block;
-                    margin-right: 30px;
+                    .game-title {
+                        margin-bottom: 10px;
+                        line-height: 0.9;
+                    }
+
+                    .game-score-length-container {
+                        margin-bottom: 15px;
+
+                        .game-how-long {
+                            margin-right: 30px;
+                        }
+                    }
+
+                    .game-replay-difficulty-container {
+                        margin-bottom: 15px;
+
+                        .game-replay-value-container {
+                            display: inline-block;
+                            margin-right: 30px;
+                        }
+
+                        .game-difficulty-container {
+                            display: inline-block;
+                        }
+                    }
+
+                    .category-icon {
+                        width: 13px;
+                        margin-right: 10px;
+                    }
+
+                    .external-link-icon {
+                        cursor: pointer;
+                        color: #fff;
+                        margin-left: 3px;
+                    }
                 }
 
-                .game-score {
-                    display: inline-block;
+                .game-price-container {
+                    line-height: 2.1em;
+
+                    .game-purchase-link {
+                        border-style: solid;
+                        border-radius: 5px;
+                        border-width: 2px;
+                        border-color: #fff;
+                        padding: 6px 9px;
+                        color: #fff;
+                        margin-left: 10px;
+                    }
                 }
-            }
-
-            .game-replay-difficulty-container {
-                margin-bottom: 15px;
-
-                .game-replay-value-container {
-                    display: inline-block;
-                    margin-right: 30px;
-                }
-
-                .game-difficulty-container {
-                    display: inline-block;
-                }
-            }
-
-            .game-price-container {
-
-                .game-purchase-link {
-                    border-style: solid;
-                    border-radius: 5px;
-                    border-width: 2px;
-                    border-color: black;
-                    padding: 5px 10px;
-                    color: black;
-                }
-            }
-
-            .category-icon {
-                width: 13px;
-                margin-right: 10px;
-            }
-
-            .external-link-icon {
-                cursor: pointer;
-                color: #000;
-                margin-left: 3px;
             }
         }
     }

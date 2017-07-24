@@ -13,72 +13,77 @@
         <link rel="stylesheet" href="/css/mobile.css">
     </head>
     <body>
-        <div class="sidebar-container">
-            <div class="sidebar">
-                {% for post in site.posts %}
-                    <a class="post-link-container" href="{{ post.url }}">
-                        <div class="post-link">
-                            <img class="img-sm" src="/assets/images/{{ post.image }}" height="40">
-                            <div class="post-info-container">
-                                <div class="post-title">
-                                    {{ post.title }}
-                                </div>
-                                <div class="post-date">
-                                    {{ post.date | date: "%B %e, %Y" }}
+        <div class="background-overlay" style="background-image:url('/assets/images/{{ page.image }}')"></div>
+        <div class="page-wrapper">
+            <div class="sidebar-container">
+                <div class="sidebar">
+                    {% for post in site.posts %}
+                        <a class="post-link-container" href="{{ post.url }}">
+                            <div class="post-link">
+                                <img class="img-sm" src="/assets/images/{{ post.image }}" height="40">
+                                <div class="post-info-container">
+                                    <div class="post-title">
+                                        {{ post.title }}
+                                    </div>
+                                    <div class="post-date">
+                                        {{ post.date | date: "%B %e, %Y" }}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                {% endfor %}
+                        </a>
+                    {% endfor %}
+                </div>
             </div>
-            <div class="fadeout"></div>
-        </div>
-        <div class="main">
-            {% assign post = site.posts.first %}
-            <div class="game-info-container">
-                <img class="img-lg" src="/assets/images/{{ post.image }}">
-                <div class="game-details-container">
-                    <h2 class="game-title">{{ post.title }}</h2>
-                    <div class="game-platforms">
-                        <i class="fa fa-gamepad category-icon" aria-hidden="true"></i>
-                        {{ post.platforms }}
-                    </div>
-                    <div class="game-score-length-container">
-                        <div class="game-how-long">
-                            <i class="fa fa-clock-o category-icon" aria-hidden="true"></i>
-                            {{ post.howLong }} hours
-                            <a href="{{ post.howLongToBeatLink }}">
-                                <i class="fa fa-external-link-square external-link-icon" aria-hidden="true"></i>
-                            </a>
+            <div class="main">
+                <div class="game-info-container">
+                    <img class="img-lg" src="/assets/images/{{ page.image }}">
+                    <div class="game-details-container">
+                        <div class="game-details-wrapper">
+                            <div class="game-details">
+                                <h2 class="game-title">{{ page.title }}</h2>
+                                <div class="game-platforms">
+                                    <i class="fa fa-gamepad category-icon" aria-hidden="true"></i>
+                                    {{ page.platforms }}
+                                </div>
+                                <div class="game-score-length-container">
+                                    <span class="game-how-long">
+                                        <i class="fa fa-clock-o category-icon" aria-hidden="true"></i>
+                                        {{ page.howLong }} hours
+                                        <a href="{{ page.howLongToBeatLink }}">
+                                            <i class="fa fa-external-link-square external-link-icon" aria-hidden="true"></i>
+                                        </a>
+                                    </span>
+                                    <span class="game-score">
+                                        <i class="fa fa-line-chart category-icon" aria-hidden="true"></i>
+                                        {{ page.score }} / 10
+                                        <a href="{{ page.metacriticLink }}">
+                                            <i class="fa fa-external-link-square external-link-icon" aria-hidden="true"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="game-replay-difficulty-container">
+                                    <span class="game-replay-value-container">
+                                        <h5 class="game-replay-value">Replay Value</h5>
+                                        {% for i in (1..page.replayValue) %}
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                        {% endfor %}
+                                    </span>
+                                    <span class="game-difficulty-container">
+                                        <h5 class="game-difficulty">Difficulty</h5>
+                                        {% for i in (1..page.difficulty) %}
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                        {% endfor %}
+                                    </span>
+                                </div>
+                                <div class="game-blurb-review">
+                                    {{ page.blurb }}
+                                </div>
+                            </div>
+                            <div class="game-price-container">
+                                ${{ page.price }}
+                                <a href="{{ page.purchaseLink }}" class="game-purchase-link">BUY</a>
+                            </div>
                         </div>
-                        <div class="game-score">
-                            <i class="fa fa-line-chart category-icon" aria-hidden="true"></i>
-                            {{ post.score }} / 10
-                            <a href="{{ post.metacriticLink }}">
-                                <i class="fa fa-external-link-square external-link-icon" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="game-replay-difficulty-container">
-                        <div class="game-replay-value-container">
-                            <h5 class="game-replay-value">Replay Value</h5>
-                            {% for i in (1..post.replayValue) %}
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            {% endfor %}
-                        </div>
-                        <div class="game-difficulty-container">
-                            <h5 class="game-difficulty">Difficulty</h5>
-                            {% for i in (1..post.difficulty) %}
-                                <i class="fa fa-star" aria-hidden="true"></i>
-                            {% endfor %}
-                        </div>
-                    </div>
-                    <div class="game-blurb-review">
-                        {{ post.blurb }}
-                    </div>
-                    <div class="game-price-container">
-                        ${{ post.price }}
-                        <a href="{{ post.purchaseLink }}" class="game-purchase-link">BUY</a>
                     </div>
                 </div>
             </div>
