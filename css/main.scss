@@ -9,6 +9,7 @@
 // Imports
 //============
 @import 'flexbox.scss';
+@import 'mediaQueries.scss';
 
 //============
 // General
@@ -49,168 +50,172 @@ a {
 // Background
 //============
 
-.background-overlay {
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-    background-color: #000;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: hard-light;
-    -webkit-filter: blur(50px);
-    filter: blur(50px);
-}
+@include desktop {
 
-.page-wrapper {
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(23, 0, 38, 0.6);
-}
-
-//============
-// Sidebar
-//============
-
-.sidebar-container {
-    position: absolute;
-    width: 250px;
-    height: 100vh;
-    overflow: hidden;
-
-    .sidebar {
-        margin: 30px 0;
-        height: 90%;
-        overflow: auto;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: -17px;
+    .background-overlay {
         position: absolute;
-        -webkit-mask-image: -webkit-gradient(linear, left 50%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.2)));
+        height: 100vh;
+        width: 100vw;
+        background-color: #000;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: hard-light;
+        -webkit-filter: blur(50px);
+        filter: blur(50px);
+    }
 
-        .post-link-container {
+    .page-wrapper {
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(23, 0, 38, 0.6);
+    }
 
-            .post-link {
-                display: inline-block;
-                width: 90%;
-                padding: 7px 0;
-                margin-left: 10%;
-                border-style: hidden hidden solid hidden;
-                border-width: 1px;
-                border-color: rgba(255, 255, 255, 0.2);
+    //============
+    // Sidebar
+    //============
 
-                .img-sm {
-                    vertical-align: middle;
-                }
+    .sidebar-container {
+        position: absolute;
+        width: 250px;
+        height: 100vh;
+        overflow: hidden;
 
-                .post-info-container {
+        .sidebar {
+            margin: 30px 0;
+            height: 90%;
+            overflow: auto;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: -17px;
+            position: absolute;
+            -webkit-mask-image: -webkit-gradient(linear, left 50%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.2)));
+
+            .post-link-container {
+
+                .post-link {
                     display: inline-block;
-                    vertical-align: middle;
-                    height: 40px;
+                    width: 90%;
+                    padding: 7px 0;
+                    margin-left: 10%;
+                    border-style: hidden hidden solid hidden;
+                    border-width: 1px;
+                    border-color: rgba(255, 255, 255, 0.2);
 
-                    .post-date {
-                        font-size: 12px;
-                        color: #e2e2e2;
-                    }
-                }
-            }
-        }
-    }
-}
-
-//============
-// Main
-//============
-
-.main {
-    position: absolute;
-    width: calc(100vw - 250px);
-    height: 100vh;
-    left: 250px;
-    @include flexbox;
-    @include align-items(center);
-
-    .game-info-container {
-        margin: auto;
-        text-align: center;
-        width: 100%;
-        height: 300px;
-
-        .img-lg {
-            display: inline-block;
-            margin-right: 20px;
-            height: 300px;
-        }
-
-        .game-details-container {
-            display: inline-block;
-            vertical-align: top;
-            max-width: 40%;
-            text-align: left;
-            height: 300px;
-
-            .game-details-wrapper {
-                height: 100%;
-                @include flexbox;
-                @include flex-direction(column);
-                @include justify-content(space-between);
-
-                .game-details {
-
-                    .game-title {
-                        margin-bottom: 10px;
-                        line-height: 0.9;
+                    .img-sm {
+                        vertical-align: middle;
                     }
 
-                    .game-score-length-container {
-                        margin-bottom: 15px;
+                    .post-info-container {
+                        display: inline-block;
+                        vertical-align: middle;
+                        height: 40px;
 
-                        .game-how-long {
-                            margin-right: 30px;
+                        .post-date {
+                            font-size: 12px;
+                            color: #e2e2e2;
                         }
-                    }
-
-                    .game-replay-difficulty-container {
-                        margin-bottom: 15px;
-
-                        .game-replay-value-container {
-                            display: inline-block;
-                            margin-right: 30px;
-                        }
-
-                        .game-difficulty-container {
-                            display: inline-block;
-                        }
-                    }
-
-                    .category-icon {
-                        width: 13px;
-                        margin-right: 10px;
-                    }
-
-                    .external-link-icon {
-                        cursor: pointer;
-                        color: #fff;
-                        margin-left: 3px;
-                    }
-                }
-
-                .game-price-container {
-                    line-height: 2.1em;
-
-                    .game-purchase-link {
-                        border-style: solid;
-                        border-radius: 5px;
-                        border-width: 2px;
-                        border-color: #fff;
-                        padding: 6px 9px;
-                        color: #fff;
-                        margin-left: 10px;
                     }
                 }
             }
         }
     }
 
+    //============
+    // Main
+    //============
+
+    .main {
+        position: absolute;
+        width: calc(100vw - 250px);
+        height: 100vh;
+        left: 250px;
+        @include flexbox;
+        @include align-items(center);
+
+        .game-info-container {
+            margin: auto;
+            text-align: center;
+            width: 100%;
+            height: 300px;
+
+            .img-lg {
+                display: inline-block;
+                margin-right: 20px;
+                height: 300px;
+            }
+
+            .game-details-container {
+                display: inline-block;
+                vertical-align: top;
+                max-width: 40%;
+                text-align: left;
+                height: 300px;
+
+                .game-details-wrapper {
+                    height: 100%;
+                    @include flexbox;
+                    @include flex-direction(column);
+                    @include justify-content(space-between);
+
+                    .game-details {
+
+                        .game-title {
+                            margin-bottom: 10px;
+                            line-height: 0.9;
+                        }
+
+                        .game-score-length-container {
+                            margin-bottom: 15px;
+
+                            .game-how-long {
+                                margin-right: 30px;
+                            }
+                        }
+
+                        .game-replay-difficulty-container {
+                            margin-bottom: 15px;
+
+                            .game-replay-value-container {
+                                display: inline-block;
+                                margin-right: 30px;
+                            }
+
+                            .game-difficulty-container {
+                                display: inline-block;
+                            }
+                        }
+
+                        .category-icon {
+                            width: 13px;
+                            margin-right: 10px;
+                        }
+
+                        .external-link-icon {
+                            cursor: pointer;
+                            margin-left: 3px;
+                            font-size: 10px;
+                            height: 16px;
+                            vertical-align: middle;
+                        }
+                    }
+
+                    .game-price-container {
+                        line-height: 2.1em;
+
+                        .game-purchase-link {
+                            border-style: solid;
+                            border-radius: 5px;
+                            border-width: 2px;
+                            border-color: #fff;
+                            padding: 6px 9px;
+                            color: #fff;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

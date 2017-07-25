@@ -9,8 +9,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Games</title>
         <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="/css/mobile.css">
+        <link rel="stylesheet" href="/css/main.css">
     </head>
     <body>
         <div class="background-overlay" style="background-image:url('/assets/images/{{ page.image }}')"></div>
@@ -50,14 +50,14 @@
                                         <i class="fa fa-clock-o category-icon" aria-hidden="true"></i>
                                         {{ page.howLong }} hours
                                         <a href="{{ page.howLongToBeatLink }}">
-                                            <i class="fa fa-external-link-square external-link-icon" aria-hidden="true"></i>
+                                            <img class="external-link-icon" src="/assets/icons/external-link.svg" />
                                         </a>
                                     </span>
                                     <span class="game-score">
                                         <i class="fa fa-line-chart category-icon" aria-hidden="true"></i>
                                         {{ page.score }} / 10
                                         <a href="{{ page.metacriticLink }}">
-                                            <i class="fa fa-external-link-square external-link-icon" aria-hidden="true"></i>
+                                            <img class="external-link-icon" src="/assets/icons/external-link.svg" />
                                         </a>
                                     </span>
                                 </div>
