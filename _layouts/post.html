@@ -49,14 +49,14 @@
                                     <span class="game-how-long">
                                         <i class="fa fa-clock-o category-icon" aria-hidden="true"></i>
                                         {{ page.howLong }} hours
-                                        <a href="{{ page.howLongToBeatLink }}">
+                                        <a href="{{ page.howLongToBeatLink }}" target="_blank">
                                             <img class="external-link-icon" src="/assets/icons/external-link.svg" />
                                         </a>
                                     </span>
                                     <span class="game-score">
                                         <i class="fa fa-line-chart category-icon" aria-hidden="true"></i>
                                         {{ page.score }} / 10
-                                        <a href="{{ page.metacriticLink }}">
+                                        <a href="{{ page.metacriticLink }}" target="_blank">
                                             <img class="external-link-icon" src="/assets/icons/external-link.svg" />
                                         </a>
                                     </span>
@@ -81,10 +81,15 @@
                             </div>
                             <div class="game-price-container">
                                 ${{ page.price }}
-                                <a href="{{ page.purchaseLink }}" class="game-purchase-link">BUY</a>
+                                <a href="{{ page.purchaseLink }}" target="_blank" class="game-purchase-link">BUY</a>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="review-wrapper">
+                <div class="review">
+                    Review text goes here
                 </div>
             </div>
         </div>
