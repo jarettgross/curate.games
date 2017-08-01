@@ -23,7 +23,7 @@ dl, dd, ol, ul, figure {
 }
 
 body {
-    font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     color: #fff;
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
@@ -111,6 +111,7 @@ a {
                         display: inline-block;
                         vertical-align: middle;
                         height: 40px;
+                        margin-left: 5px;
 
                         .post-date {
                             font-size: 12px;
@@ -132,13 +133,43 @@ a {
         height: 100vh;
         left: 250px;
         @include flexbox;
+        @include flex-direction(column);
         @include align-items(center);
+        @include justify-content(space-between);
+
+        .nav-bar {
+            @include flexbox;
+            @include justify-content(space-between);
+            width: 500px;
+            height: 40px;
+            margin-top: 15px;
+
+            .btn-change-post-wrapper {
+                min-width: 120px;
+                font-size: 14px;
+                text-transform: uppercase;
+                line-height: 40px;
+            }
+
+            .btn-menu {
+                height: 40px;
+                cursor: pointer;
+            }
+        }
+
+        .footer {
+            height: 40px;
+            margin-bottom: 15px;
+        }
 
         .game-info-container {
+            width: 500px;
+            height: 300px;
             margin: auto;
             text-align: center;
-            width: 100%;
-            height: 300px;
+            white-space: nowrap;
+            @include flexbox;
+            @include justify-content(space-between);
 
             .img-lg {
                 display: inline-block;
@@ -187,6 +218,12 @@ a {
                             }
                         }
 
+                        .read-more {
+                            font-size: 14px;
+                            cursor: pointer;
+                            margin-top: 10px;
+                        }
+
                         .category-icon {
                             width: 13px;
                             margin-right: 10px;
@@ -204,12 +241,16 @@ a {
                     .game-price-container {
                         line-height: 2.1em;
 
+                        .game-price {
+                            font-size: 20px;
+                        }
+
                         .game-purchase-link {
                             border-style: solid;
-                            border-radius: 5px;
+                            border-radius: 3px;
                             border-width: 2px;
                             border-color: #fff;
-                            padding: 6px 9px;
+                            padding: 4px 12px;
                             color: #fff;
                             margin-left: 10px;
                         }

@@ -8,6 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Games</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700">
         <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="/css/mobile.css">
         <link rel="stylesheet" href="/css/main.css">
@@ -35,6 +36,23 @@
                 </div>
             </div>
             <div class="main">
+                <div class="nav-bar">
+                    <span class="btn-change-post-wrapper">
+                        {% if page.previous %}
+                            <a class="btn-change-post" href="{{ page.previous.url }}">
+                                ⬅ {{ page.previous.date | date: "%A, %B %e" }}
+                            </a>
+                        {% endif %}
+                    </span>
+                    <img class="btn-menu" src="/assets/icons/menu.svg" />
+                    <span class="btn-change-post-wrapper">
+                        {% if page.next %}
+                            <a class="btn-change-post" href="{{ page.next.url }}">
+                                {{ page.next.date | date: "%A, %B %e" }} ⮕
+                            </a>
+                        {% endif %}
+                    </span>
+                </div>
                 <div class="game-info-container">
                     <img class="img-lg" src="/assets/images/{{ page.image }}">
                     <div class="game-details-container">
@@ -63,13 +81,13 @@
                                 </div>
                                 <div class="game-replay-difficulty-container">
                                     <span class="game-replay-value-container">
-                                        <h5 class="game-replay-value">Replay Value</h5>
+                                        <div class="game-replay-value">Replay Value</div>
                                         {% for i in (1..page.replayValue) %}
                                             <i class="fa fa-star" aria-hidden="true"></i>
                                         {% endfor %}
                                     </span>
                                     <span class="game-difficulty-container">
-                                        <h5 class="game-difficulty">Difficulty</h5>
+                                        <div class="game-difficulty">Difficulty</div>
                                         {% for i in (1..page.difficulty) %}
                                             <i class="fa fa-star" aria-hidden="true"></i>
                                         {% endfor %}
@@ -77,20 +95,17 @@
                                 </div>
                                 <div class="game-blurb-review">
                                     {{ page.blurb }}
+                                    <div class="read-more">READ MORE ⮕</div>
                                 </div>
                             </div>
                             <div class="game-price-container">
-                                ${{ page.price }}
+                                <span class="game-price">${{ page.price }}</span>
                                 <a href="{{ page.purchaseLink }}" target="_blank" class="game-purchase-link">BUY</a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="review-wrapper">
-                <div class="review">
-                    Review text goes here
-                </div>
+                <div class="footer"></div>
             </div>
         </div>
     </body>
