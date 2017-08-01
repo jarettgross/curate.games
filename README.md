@@ -1,4 +1,4 @@
-# Website Name (we need one! also a domain suffix)
+# Trove.games
 
 ## The Idea
 A website for showcasing one game every few (3?) days. Usually unknown, smaller indie games, with maybe some more popular ones thrown in there.
@@ -7,19 +7,19 @@ Information to be displayed (check the images):
 - Platforms
 - How Long to Beat
 - Metacritic (average score)
-- Replay Value/Lasting Appeal
+- Replay Value
 - Difficulty
 - Price + Purchase Link
 - Game Image
-- Video (trailer, gameplay?)
+- Video
 
-Also thinking of having a blurb/mini-review, to give our thoughts on the game as well as a nice, quick overview. I'm thinking something like [this](https://www.reddit.com/r/NintendoSwitch/comments/6ofohv/eshop_coverage_72017_ive_played_em/?st=j5exou8i&sh=2cf31268). A combination of the "overview", "TL;DR", and "Buy?" -- need to think this through a bit more.
+A blurb and mini review, to give our thoughts on the game as well as a nice, quick overview. Something like [this](https://www.reddit.com/r/NintendoSwitch/comments/6ofohv/eshop_coverage_72017_ive_played_em/?st=j5exou8i&sh=2cf31268). A combination of the "overview", "TL;DR", and "Buy?" -- need to think this through a bit more.
 
 ## Tools and Technologies
 - [Jekyll](https://jekyllrb.com/)
 - [Sass](http://sass-lang.com/)
 - [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-- Javascript, if necessary (should be minimal, if any)
+- Javascript
 
 ## Style Guide
 Use spaces (four), not tabs (or replace tabs with spaces before committing). Pushing with tabs causes weird spacing.
