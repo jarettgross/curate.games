@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="/css/mobile.css">
         <link rel="stylesheet" href="/css/main.css">
+        <script src="/main.js"></script>
     </head>
     <body>
         <div class="background-overlay" style="background-image:url('/assets/images/{{ page.image }}')"></div>
@@ -20,8 +21,8 @@
                 <div class="sidebar">
                     {% for post in site.posts %}
                         <a class="post-link-container" href="{{ post.url }}">
-                            <div class="post-link">
-                                <img class="img-sm" src="/assets/images/{{ post.image }}" height="40">
+                            <div class="post-link btn-highlight">
+                                <img class="img-sm" src="/assets/images/{{ post.image }}" width="32">
                                 <div class="post-info-container">
                                     <div class="post-title">
                                         {{ post.title }}
@@ -39,15 +40,15 @@
                 <div class="nav-bar">
                     <span class="btn-change-post-wrapper">
                         {% if page.previous %}
-                            <a class="btn-change-post" href="{{ page.previous.url }}">
+                            <a class="btn-change-post btn-text" href="{{ page.previous.url }}">
                                 ⬅ {{ page.previous.date | date: "%A, %B %e" }}
                             </a>
                         {% endif %}
                     </span>
-                    <img class="btn-menu" src="/assets/icons/menu.svg" />
+                    <img id="btn-menu" src="/assets/icons/menu.svg" />
                     <span class="btn-change-post-wrapper">
                         {% if page.next %}
-                            <a class="btn-change-post" href="{{ page.next.url }}">
+                            <a class="btn-change-post btn-text" href="{{ page.next.url }}">
                                 {{ page.next.date | date: "%A, %B %e" }} ⮕
                             </a>
                         {% endif %}
@@ -94,13 +95,13 @@
                                     </span>
                                 </div>
                                 <div class="game-blurb-review">
-                                    {{ page.blurb }}
-                                    <div class="read-more">READ MORE ⮕</div>
+                                    <p>{{ page.blurb }}</p>
+                                    <div class="read-more btn-text">READ MORE ⮕</div>
                                 </div>
                             </div>
                             <div class="game-price-container">
                                 <span class="game-price">${{ page.price }}</span>
-                                <a href="{{ page.purchaseLink }}" target="_blank" class="game-purchase-link">BUY</a>
+                                <a href="{{ page.purchaseLink }}" target="_blank" class="game-purchase-link btn-highlight">BUY</a>
                             </div>
                         </div>
                     </div>
