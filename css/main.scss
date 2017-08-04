@@ -10,6 +10,7 @@
 //============
 @import 'flexbox.scss';
 @import 'mediaQueries.scss';
+@import 'helpers.scss';
 
 //============
 // General
@@ -37,13 +38,13 @@ a {
     color: #fff;
     text-decoration: none;
 
-    :visited {
-
-    }
-
     :hover {
         text-decoration: none;
     }
+}
+
+.hide {
+    display: none !important;
 }
 
 @include desktop {
@@ -76,11 +77,6 @@ a {
     //============
 
     .sidebar-container-extend {
-        -webkit-transition: 1.2s;
-        -moz-transition: 1.2s;
-        -ms-transition: 1.2s;
-        -o-transition: 1.2s;
-        transition: 1.2s;
         width: 250px !important;
     }
 
@@ -89,6 +85,8 @@ a {
         width: 0;
         height: 100vh;
         overflow: hidden;
+        @include transition(1.2s);
+        @include translateZ();
 
         .sidebar {
             margin: 30px 0;
@@ -138,22 +136,30 @@ a {
     // Main
     //============
 
+    .main-extend {
+        width: calc(100vw - 250px) !important;
+        left: 250px !important;
+    }
+
     .main {
         position: absolute;
-        width: calc(100vw - 250px);
         height: 100vh;
-        left: 250px;
+        width: 100vw;
+        left: 0;
+        @include transition(1.2s);
+        @include translateZ();
         @include flexbox;
         @include flex-direction(column);
         @include align-items(center);
         @include justify-content(space-between);
 
         .nav-bar {
-            @include flexbox;
-            @include justify-content(space-between);
             width: 500px;
             height: 40px;
             margin-top: 15px;
+            @include disableHighlight;
+            @include flexbox;
+            @include justify-content(space-between);
 
             .btn-change-post-wrapper {
                 min-width: 120px;
@@ -166,11 +172,6 @@ a {
                 height: 40px;
                 cursor: pointer;
             }
-        }
-
-        .footer {
-            height: 40px;
-            margin-bottom: 15px;
         }
 
         .game-info-container {
@@ -186,20 +187,52 @@ a {
                 display: inline-block;
                 margin-right: 20px;
                 height: 300px;
+                @include disableHighlight;
             }
 
             .game-details-container {
                 display: inline-block;
                 vertical-align: top;
-                max-width: 40%;
                 text-align: left;
+                max-width: 230px;
                 height: 300px;
 
                 .game-details-wrapper {
                     height: 100%;
+                    overflow-x: hidden;
                     @include flexbox;
                     @include flex-direction(column);
                     @include justify-content(space-between);
+
+                    //============
+                    // Review Transition
+                    //============
+
+                    .game-info-right {
+                        left: 250px !important;
+                        @include transition(1.2s);
+                        @include translateZ();
+                    }
+
+                    .game-info {
+                        position: relative;
+                        left: 0px;
+                        @include transition(1.2s);
+                        @include translateZ();
+                    }
+
+                    .game-info-left {
+                        right: 0 !important;
+                        @include transition(1.2s);
+                        @include translateZ();
+                    }
+
+                    .game-full-review {
+                        position: relative;
+                        right: 250px;
+                        @include transition(1.2s);
+                        @include translateZ();
+                    }
 
                     .game-details {
 
@@ -231,8 +264,16 @@ a {
 
                         .read-more {
                             font-size: 14px;
-                            cursor: pointer;
                             margin-top: 10px;
+                            display: inline-block;
+                        }
+
+                        .game-blurb-review {
+                            white-space: normal;
+                        }
+
+                        .go-back {
+                            font-size: 14px;
                             display: inline-block;
                         }
 
@@ -270,6 +311,11 @@ a {
                 }
             }
         }
+
+        .footer {
+            height: 40px;
+            margin-bottom: 15px;
+        }
     }
 
     //============
@@ -302,6 +348,8 @@ a {
     //============
 
     .btn-text {
+        cursor: pointer;
+
         &:hover {
             border-bottom: 1px solid #fff;
             box-shadow: 0px 5px 5px -1px rgba(20, 20, 20, 0.3);

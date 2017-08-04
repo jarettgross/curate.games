@@ -40,7 +40,7 @@
                 <div class="nav-bar">
                     <span class="btn-change-post-wrapper">
                         {% if page.previous %}
-                            <a class="btn-change-post btn-text" href="{{ page.previous.url }}">
+                            <a class="btn-change-post btn btn-text" href="{{ page.previous.url }}">
                                 ⬅ {{ page.previous.date | date: "%A, %B %e" }}
                             </a>
                         {% endif %}
@@ -48,7 +48,7 @@
                     <img id="btn-menu" src="/assets/icons/menu.svg" />
                     <span class="btn-change-post-wrapper">
                         {% if page.next %}
-                            <a class="btn-change-post btn-text" href="{{ page.next.url }}">
+                            <a class="btn-change-post btn btn-text" href="{{ page.next.url }}">
                                 {{ page.next.date | date: "%A, %B %e" }} ⮕
                             </a>
                         {% endif %}
@@ -60,27 +60,27 @@
                         <div class="game-details-wrapper">
                             <div class="game-details">
                                 <h2 class="game-title">{{ page.title }}</h2>
-                                <div class="game-platforms">
+                                <div class="game-platforms game-info">
                                     <i class="fa fa-gamepad category-icon" aria-hidden="true"></i>
                                     {{ page.platforms }}
                                 </div>
-                                <div class="game-score-length-container">
+                                <div class="game-score-length-container game-info">
                                     <span class="game-how-long">
                                         <i class="fa fa-clock-o category-icon" aria-hidden="true"></i>
                                         {{ page.howLong }} hours
-                                        <a href="{{ page.howLongToBeatLink }}" target="_blank">
+                                        <a href="{{ page.howLongToBeatLink }}" target="_blank" class="btn">
                                             <img class="external-link-icon" src="/assets/icons/external-link.svg" />
                                         </a>
                                     </span>
                                     <span class="game-score">
                                         <i class="fa fa-line-chart category-icon" aria-hidden="true"></i>
                                         {{ page.score }} / 10
-                                        <a href="{{ page.metacriticLink }}" target="_blank">
+                                        <a href="{{ page.metacriticLink }}" target="_blank" class="btn">
                                             <img class="external-link-icon" src="/assets/icons/external-link.svg" />
                                         </a>
                                     </span>
                                 </div>
-                                <div class="game-replay-difficulty-container">
+                                <div class="game-replay-difficulty-container game-info">
                                     <span class="game-replay-value-container">
                                         <div class="game-replay-value">Replay Value</div>
                                         {% for i in (1..page.replayValue) %}
@@ -94,12 +94,16 @@
                                         {% endfor %}
                                     </span>
                                 </div>
-                                <div class="game-blurb-review">
+                                <div class="game-blurb-review game-info">
                                     <p>{{ page.blurb }}</p>
-                                    <div class="read-more btn-text">READ MORE ⮕</div>
+                                    <div class="read-more btn btn-text">READ MORE ⮕</div>
+                                </div>
+                                <div class="game-full-review">
+                                    <div class="go-back btn btn-text">⬅ BACK</div>
+                                    <p>{{ page.review }}</p>
                                 </div>
                             </div>
-                            <div class="game-price-container">
+                            <div class="game-price-container game-info">
                                 <span class="game-price">${{ page.price }}</span>
                                 <a href="{{ page.purchaseLink }}" target="_blank" class="game-purchase-link btn-highlight">BUY</a>
                             </div>

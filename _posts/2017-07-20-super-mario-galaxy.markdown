@@ -1,8 +1,8 @@
 ---
 layout: post
 
-url: 2017/07/19
-date:  2017-07-19 19:45:36 -0700
+url: 2017/07/20
+date:  2017-07-20 19:45:36 -0700
 
 title: Super Mario Galaxy
 image: SuperMarioGalaxy.png
@@ -17,6 +17,7 @@ howLongToBeatLink: https://www.amazon.com/Super-Mario-Galaxy-Nintendo-Selects-Wi
 metacriticLink: https://www.amazon.com/Super-Mario-Galaxy-Nintendo-Selects-Wii/dp/B005FYJA52
 purchaseLink: https://www.amazon.com/Super-Mario-Galaxy-Nintendo-Selects-Wii/dp/B005FYJA52
 
-blurb:
-    Need space for blurb
+blurb: Super Mario Galaxy is an innovative, 3D platformer that keeps getting better
+review:
+    This is where the review text is going to go
 ---
