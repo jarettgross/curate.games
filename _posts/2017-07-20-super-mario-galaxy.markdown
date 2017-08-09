@@ -7,6 +7,7 @@ date:  2017-07-20 19:45:36 -0700
 title: Super Mario Galaxy
 image: SuperMarioGalaxy.png
 platforms: Wii
+year: 2007
 howLong: 12
 score: 9.5
 replayValue: 5
