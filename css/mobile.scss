@@ -9,3 +9,67 @@
 // Imports
 //============
 @import 'flexbox.scss';
+@import 'mediaQueries.scss';
+
+@include mobile {
+
+    .sidebar-close {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .sidebar-container-open {
+        width: 100vw !important;
+    }
+
+    .main-open {
+        width: 0 !important;
+        left: 100vw !important;
+    }
+
+    .main {
+
+        .nav-bar {
+            width: 80% !important;
+        }
+
+        .btn-play {
+            position: relative !important;
+            display: inline-block !important;
+            margin-top: 210px !important;
+            margin-right: -50px !important;
+        }
+
+        #ytplayer {
+            margin: auto !important;
+            top: 0 !important;
+            right: 0 !important;
+            bottom: 0 !important;
+            left: 0 !important;
+        }
+
+        .img-lg {
+            height: 260px !important;
+            margin-right: 0 !important;
+        }
+
+        .game-info-container {
+            width: 100% !important;
+            height: 80% !important;
+            overflow-y: scroll !important;
+            @include flexbox;
+            @include flex-direction(column);
+            @include justify-content(flex-start);
+
+            .game-details-container {
+                margin: auto !important;
+
+                .game-title {
+                    text-align: center !important;
+                }
+            }
+        }
+    }
+}

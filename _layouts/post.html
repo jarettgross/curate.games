@@ -10,30 +10,35 @@
         <title>Games</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700">
         <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/css/mobile.css">
         <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/mobile.css">
         <script src="/main.js"></script>
     </head>
     <body>
         <div class="background-overlay" style="background-image:url('/assets/images/{{ page.image }}')"></div>
         <div class="page-wrapper">
             <div class="sidebar-container">
+                <img class="btn sidebar-close hide" src="/assets/icons/close.svg" />
+                <div id="sidebar-up" class="hide">
+                    ▲
+                </div>
                 <div class="sidebar">
                     {% for post in site.posts %}
-                        <a class="post-link-container" href="{{ post.url }}">
-                            <div class="post-link btn-highlight">
-                                <img class="img-sm" src="/assets/images/{{ post.image }}" width="32">
-                                <div class="post-info-container">
-                                    <div class="post-title">
-                                        {{ post.title }}
-                                    </div>
-                                    <div class="post-date">
-                                        {{ post.date | date: "%B %e, %Y" }}
-                                    </div>
+                        <a href="{{ post.url }}" class="post-link btn-highlight">
+                            <img class="img-sm" src="/assets/images/{{ post.image }}" width="32">
+                            <div class="post-info-container">
+                                <div class="post-title">
+                                    {{ post.title }}
+                                </div>
+                                <div class="post-date">
+                                    {{ post.date | date: "%B %e, %Y" }}
                                 </div>
                             </div>
                         </a>
                     {% endfor %}
+                </div>
+                <div id="sidebar-down">
+                    ▼
                 </div>
             </div>
             <div class="main">
@@ -45,7 +50,8 @@
                             </a>
                         {% endif %}
                     </span>
-                    <img id="btn-menu" src="/assets/icons/menu.svg" />
+                    <img class="btn btn-menu" src="/assets/icons/menu.svg" />
+                    <img class="btn btn-close hide" src="/assets/icons/close.svg" />
                     <span class="btn-change-post-wrapper">
                         {% if page.next %}
                             <a class="btn-change-post btn btn-text" href="{{ page.next.url }}">
@@ -55,11 +61,16 @@
                     </span>
                 </div>
                 <div class="game-info-container">
-                    <img class="img-lg" src="/assets/images/{{ page.image }}">
+                    <iframe class="hide" id="ytplayer" type="text/html" width="500" height="300" frameborder="0"
+                        src="https://www.youtube.com/embed/{{ page.video }}" allowfullscreen></iframe>
+                    <div>
+                        <img class="btn btn-play" src="/assets/icons/play.svg" />
+                        <img class="img-lg" src="/assets/images/{{ page.image }}" />
+                    </div>
                     <div class="game-details-container">
                         <div class="game-details-wrapper">
+                            <h2 class="game-title">{{ page.title }}</h2>
                             <div class="game-details">
-                                <h2 class="game-title">{{ page.title }}</h2>
                                 <div class="game-platforms game-info">
                                     <i class="fa fa-gamepad category-icon" aria-hidden="true"></i>
                                     {{ page.platforms }}
@@ -98,14 +109,18 @@
                                     <p>{{ page.blurb }}</p>
                                     <div class="read-more btn btn-text">READ MORE ⮕</div>
                                 </div>
-                                <div class="game-full-review">
-                                    <div class="go-back btn btn-text">⬅ BACK</div>
-                                    <p>{{ page.review }}</p>
+                                <div class="game-price-container game-info">
+                                    <span class="game-price">${{ page.price }}</span>
+                                    <a href="{{ page.purchaseLink }}" target="_blank" class="game-purchase-link btn-highlight">BUY</a>
                                 </div>
-                            </div>
-                            <div class="game-price-container game-info">
-                                <span class="game-price">${{ page.price }}</span>
-                                <a href="{{ page.purchaseLink }}" target="_blank" class="game-purchase-link btn-highlight">BUY</a>
+                                <div class="game-full-review">
+                                    <div class="go-back-container">
+                                        <div class="go-back btn btn-text">⬅ BACK</div>
+                                    </div>
+                                    <div id="review-up"></div>
+                                    <p class="full-review">{{ page.review }}</p>
+                                    <div id="review-down">▼</div>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -17,7 +17,9 @@ howLongToBeatLink: https://www.amazon.com/Super-Mario-Galaxy-Nintendo-Selects-Wi
 metacriticLink: https://www.amazon.com/Super-Mario-Galaxy-Nintendo-Selects-Wii/dp/B005FYJA52
 purchaseLink: https://www.amazon.com/Super-Mario-Galaxy-Nintendo-Selects-Wii/dp/B005FYJA52
 
+video: ZJFMDlcxkDA
+
 blurb: Super Mario Galaxy is an innovative, 3D platformer that keeps getting better
 review:
-    This is where the review text is going to go
+    This is where the review text is going to goThis is where the review text is going to goThis is where the review text is going to goThis is where the review text is going to goThis is where the review text is going to goThis is where the review text is going to goThis is where the review text is going to goThis is where the review text is going to goThis is where the review text is going to goThis is where the review text is going to goThis is where the review text is going to goThis is where the review text is going to goThis is where the review text is going to goThis is where the review text is going to goThis is where the review text is going to goThis is where the review text is going to goThis is where the review text is going to goThis is where the review text is going to goThis is where the review text is going to goThis is where the review text is going to goThis is where the review text is going to goThis is where the review text is going to goThis is where the review text is going to goThis is where the review text is going to goThis is where the review text is going to goThis is where the review text is going to goThis is where the review text is going to goThis is where the review text is going to goThis is where the review text is going to goThis is where the review text is going to goThis is where the review text is going to goThis is where the review text is going to goThis is where the review text is going to goThis is where the review text is going to go
 ---

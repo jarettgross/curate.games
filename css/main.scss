@@ -26,6 +26,7 @@ dl, dd, ol, ul, figure {
 body {
     font-family: 'Open Sans Condensed', sans-serif;
     color: #fff;
+    overflow: hidden;
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
     -moz-font-feature-settings: "kern" 1;
@@ -47,318 +48,395 @@ a {
     display: none !important;
 }
 
-@include desktop {
+//============
+// Background
+//============
 
-    //============
-    // Background
-    //============
+.background-overlay {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: hard-light;
+    -webkit-filter: blur(50px);
+    -moz-filter: blur(50px);
+    -ms-filter: blur(50px);
+    -o-filter: blur(50px);
+    filter: blur(50px);
+}
 
-    .background-overlay {
+.page-wrapper {
+    height: 100vh;
+    width: 100vw;
+    z-index: 99;
+    background-color: rgba(23, 0, 38, 0.6);
+}
+
+//============
+// Sidebar
+//============
+
+.sidebar-container-open {
+    width: 250px !important;
+}
+
+.sidebar-container {
+    position: absolute;
+    width: 0;
+    height: 100vh;
+    overflow: hidden;
+    @include transition(1.2s);
+    @include translateZ();
+
+    #sidebar-up {
         position: absolute;
-        height: 100vh;
-        width: 100vw;
-        background-color: #000;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-blend-mode: hard-light;
-        -webkit-filter: blur(50px);
-        filter: blur(50px);
+        top: 1%;
+        width: 100%;
+        text-align: center;
+        cursor: default;
     }
 
-    .page-wrapper {
-        height: 100vh;
-        width: 100vw;
-        background-color: rgba(23, 0, 38, 0.6);
-    }
-
-    //============
-    // Sidebar
-    //============
-
-    .sidebar-container-extend {
-        width: 250px !important;
-    }
-
-    .sidebar-container {
+    #sidebar-down {
         position: absolute;
-        width: 0;
-        height: 100vh;
-        overflow: hidden;
-        @include transition(1.2s);
-        @include translateZ();
+        top: 95%;
+        width: 100%;
+        text-align: center;
+        cursor: default;
+    }
 
-        .sidebar {
-            margin: 30px 0;
-            height: 90%;
-            overflow-x: hidden;
-            overflow-y: auto;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: -17px;
-            position: absolute;
-            -webkit-mask-image: -webkit-gradient(linear, left 50%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.2)));
+    .sidebar {
+        margin: 30px 0;
+        height: 90%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: -17px;
+        position: absolute;
+        -webkit-mask-image: -webkit-gradient(linear, left 50%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.2)));
+        mask-image: gradient(linear, left 50%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.2)));
 
-            .post-link-container {
-                white-space: nowrap;
+        .post-link {
+            white-space: nowrap;
+            margin-left: 20px;
+            display: inline-block;
+            width: 90%;
+            padding: 7px 0;
+            border-style: hidden hidden solid hidden;
+            border-width: 1px;
+            border-color: rgba(255, 255, 255, 0.2);
 
-                .post-link {
-                    display: inline-block;
-                    width: 90%;
-                    padding: 7px 0;
-                    margin-left: 10%;
-                    border-style: hidden hidden solid hidden;
-                    border-width: 1px;
-                    border-color: rgba(255, 255, 255, 0.2);
+            .img-sm {
+                vertical-align: middle;
+            }
 
-                    .img-sm {
-                        vertical-align: middle;
-                    }
+            .post-info-container {
+                display: inline-block;
+                vertical-align: middle;
+                height: 40px;
+                margin-left: 5px;
 
-                    .post-info-container {
-                        display: inline-block;
-                        vertical-align: middle;
-                        height: 40px;
-                        margin-left: 5px;
-
-                        .post-date {
-                            font-size: 12px;
-                            color: #e2e2e2;
-                        }
-                    }
+                .post-date {
+                    font-size: 12px;
+                    color: #e2e2e2;
                 }
             }
         }
     }
+}
 
-    //============
-    // Main
-    //============
+//============
+// Main
+//============
 
-    .main-extend {
-        width: calc(100vw - 250px) !important;
-        left: 250px !important;
-    }
+.main-open {
+    width: calc(100vw - 250px) !important;
+    left: 250px !important;
+}
 
-    .main {
-        position: absolute;
-        height: 100vh;
-        width: 100vw;
-        left: 0;
-        @include transition(1.2s);
-        @include translateZ();
+.main {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    @include transition(1.2s);
+    @include translateZ();
+    @include flexbox;
+    @include flex-direction(column);
+    @include align-items(center);
+    @include justify-content(space-between);
+
+    .nav-bar {
+        width: 500px;
+        min-height: 40px;
+        margin-top: 15px;
+        @include disableHighlight;
         @include flexbox;
-        @include flex-direction(column);
-        @include align-items(center);
         @include justify-content(space-between);
 
-        .nav-bar {
-            width: 500px;
-            height: 40px;
-            margin-top: 15px;
-            @include disableHighlight;
-            @include flexbox;
-            @include justify-content(space-between);
-
-            .btn-change-post-wrapper {
-                min-width: 120px;
-                font-size: 14px;
-                text-transform: uppercase;
-                line-height: 40px;
-            }
-
-            #btn-menu {
-                height: 40px;
-                cursor: pointer;
-            }
+        .btn-change-post-wrapper {
+            min-width: 120px;
+            font-size: 14px;
+            text-transform: uppercase;
+            line-height: 40px;
         }
 
-        .game-info-container {
-            width: 500px;
+        .btn-menu {
+            height: 40px;
+            width: 40px;
+            cursor: pointer;
+        }
+
+        .btn-close {
+            height: 40px;
+            width: 40px;
+            cursor: pointer;
+        }
+    }
+
+    .game-info-container {
+        width: 500px;
+        height: 300px;
+        margin: auto;
+        text-align: center;
+        white-space: nowrap;
+        @include flexbox;
+        @include justify-content(space-between);
+
+        .img-lg {
+            display: inline-block;
+            margin-right: 20px;
             height: 300px;
-            margin: auto;
-            text-align: center;
-            white-space: nowrap;
-            @include flexbox;
-            @include justify-content(space-between);
+            @include disableHighlight;
+        }
 
-            .img-lg {
-                display: inline-block;
-                margin-right: 20px;
-                height: 300px;
-                @include disableHighlight;
-            }
+        .btn-play {
+            position: absolute;
+            display: block;
+            height: 50px;
+            margin-top: 250px;
+            cursor: pointer;
+        }
 
-            .game-details-container {
-                display: inline-block;
-                vertical-align: top;
-                text-align: left;
-                max-width: 230px;
-                height: 300px;
+        .game-details-container {
+            display: inline-block;
+            vertical-align: top;
+            text-align: left;
+            max-width: 230px;
+            height: 300px;
 
-                .game-details-wrapper {
-                    height: 100%;
-                    overflow-x: hidden;
-                    @include flexbox;
-                    @include flex-direction(column);
-                    @include justify-content(space-between);
+            .game-details-wrapper {
+                height: 100%;
 
-                    //============
-                    // Review Transition
-                    //============
+                //============
+                // Review Transition
+                //============
 
-                    .game-info-right {
-                        left: 250px !important;
-                        @include transition(1.2s);
-                        @include translateZ();
+                .game-info-right {
+                    left: 250px !important;
+                    @include transition(1.2s);
+                    @include translateZ();
+                }
+
+                .game-info {
+                    position: relative;
+                    left: 0px;
+                    @include transition(1.2s);
+                    @include translateZ();
+                }
+
+                .game-info-left {
+                    right: 0 !important;
+                    @include transition(1.2s);
+                    @include translateZ();
+
+                    p {
+                        overflow-y: scroll !important;
+                    }
+                }
+
+                .game-title {
+                    margin-bottom: 10px;
+                    line-height: 0.9;
+                }
+
+                .game-details {
+                    overflow: hidden;
+                    max-height: 270px;
+
+                    .game-score-length-container {
+                        margin-bottom: 15px;
+
+                        .game-how-long {
+                            margin-right: 30px;
+                        }
                     }
 
-                    .game-info {
-                        position: relative;
-                        left: 0px;
-                        @include transition(1.2s);
-                        @include translateZ();
+                    .game-replay-difficulty-container {
+                        margin-bottom: 15px;
+
+                        .game-replay-value-container {
+                            display: inline-block;
+                            margin-right: 30px;
+                        }
+
+                        .game-difficulty-container {
+                            display: inline-block;
+                        }
                     }
 
-                    .game-info-left {
-                        right: 0 !important;
-                        @include transition(1.2s);
-                        @include translateZ();
+                    .read-more {
+                        font-size: 14px;
+                        margin-top: 10px;
+                        display: inline-block;
+                    }
+
+                    .game-blurb-review {
+                        white-space: normal;
+                        height: 113px;
                     }
 
                     .game-full-review {
                         position: relative;
                         right: 250px;
+                        top: -270px;
+                        overflow: hidden;
                         @include transition(1.2s);
                         @include translateZ();
-                    }
 
-                    .game-details {
-
-                        .game-title {
-                            margin-bottom: 10px;
-                            line-height: 0.9;
-                        }
-
-                        .game-score-length-container {
-                            margin-bottom: 15px;
-
-                            .game-how-long {
-                                margin-right: 30px;
-                            }
-                        }
-
-                        .game-replay-difficulty-container {
-                            margin-bottom: 15px;
-
-                            .game-replay-value-container {
-                                display: inline-block;
-                                margin-right: 30px;
-                            }
-
-                            .game-difficulty-container {
-                                display: inline-block;
-                            }
-                        }
-
-                        .read-more {
-                            font-size: 14px;
-                            margin-top: 10px;
-                            display: inline-block;
-                        }
-
-                        .game-blurb-review {
+                        p {
+                            height: 200px;
+                            width: 100%;
+                            overflow-y: hidden;
+                            padding-right: 17px;
                             white-space: normal;
                         }
 
-                        .go-back {
-                            font-size: 14px;
-                            display: inline-block;
+                        .go-back-container {
+                            height: 26px;
+
+                            .go-back {
+                                font-size: 14px;
+                                display: inline-block;
+                                margin-bottom: 3px;
+                            }
                         }
 
-                        .category-icon {
-                            width: 13px;
-                            margin-right: 10px;
-                        }
-
-                        .external-link-icon {
-                            cursor: pointer;
-                            margin-left: 3px;
+                        #review-up {
                             font-size: 10px;
-                            height: 16px;
-                            vertical-align: middle;
+                            height: 10px;
+                            margin-top: -15px;
+                            margin-bottom: 5px;
+                            text-align: center;
+                            cursor: default;
+                        }
+
+                        #review-down {
+                            font-size: 10px;
+                            height: 10px;
+                            margin-top: 5px;
+                            text-align: center;
+                            cursor: default;
                         }
                     }
 
-                    .game-price-container {
-                        line-height: 2.1em;
+                    .category-icon {
+                        width: 13px;
+                        margin-right: 10px;
+                    }
 
-                        .game-price {
-                            font-size: 20px;
-                        }
+                    .external-link-icon {
+                        cursor: pointer;
+                        margin-left: 3px;
+                        font-size: 10px;
+                        height: 16px;
+                        vertical-align: middle;
+                    }
+                }
 
-                        .game-purchase-link {
-                            border-style: solid;
-                            border-radius: 3px;
-                            border-width: 2px;
-                            border-color: #fff;
-                            padding: 4px 12px;
-                            color: #fff;
-                            margin-left: 10px;
-                        }
+                .game-price-container {
+                    line-height: 2.1em;
+
+                    .game-price {
+                        font-size: 20px;
+                    }
+
+                    .game-purchase-link {
+                        border-style: solid;
+                        border-radius: 3px;
+                        border-width: 2px;
+                        border-color: #fff;
+                        padding: 4px 12px;
+                        color: #fff;
+                        margin-left: 10px;
                     }
                 }
             }
         }
-
-        .footer {
-            height: 40px;
-            margin-bottom: 15px;
-        }
     }
 
-    //============
-    // Review
-    //============
+    .footer {
+        height: 40px;
+        margin-bottom: 15px;
+    }
+}
 
-    .review-wrapper {
-        height: 100vh;
-        width: 100vw;
-        @include flexbox;
-        @include align-items(center);
-        @include justify-content(center);
+//============
+// General
+//============
 
-        .review {
-            display: none;
-            z-index: 99;
-            color: #fff;
-            width: 500px;
-            height: 60vh;
-            background-color: rgba(50,50,50,0.9);
-            color: white;
-            padding: 10px 15px;
-            border-radius: 5px;
-            overflow-y: auto;
-        }
+.btn-text {
+    cursor: pointer;
+
+    &:hover {
+        border-bottom: 1px solid #fff;
+        box-shadow: 0px 5px 5px -1px rgba(20, 20, 20, 0.3);
+    }
+}
+
+.btn-highlight {
+    &:hover {
+        background-color: rgba(200, 200, 200, 0.4);
+    }
+}
+
+//============
+// YouTube Player
+//============
+
+#ytplayer {
+    position: absolute;
+    z-index: 99;
+}
+
+//============
+// Browser Specific
+//============
+
+// For IE
+html[data-agent*="Trident"] {
+    .background-overlay {
+        display: none !important;
     }
 
-    //============
-    // General
-    //============
-
-    .btn-text {
-        cursor: pointer;
-
-        &:hover {
-            border-bottom: 1px solid #fff;
-            box-shadow: 0px 5px 5px -1px rgba(20, 20, 20, 0.3);
-        }
+    .page-wrapper {
+        background-color: rgba(20, 20, 20, 0.7) !important;
     }
 
-    .btn-highlight {
-        &:hover {
-            background-color: rgba(200, 200, 200, 0.4);
-        }
+    .main-open {
+        width: 100vw !important;
+        left: 125px !important;
+    }
+}
+
+// For Edge
+html[data-agent*="Edge"] {
+    .main-open {
+        width: 100vw !important;
+        left: 125px !important;
     }
 }
