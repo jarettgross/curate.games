@@ -256,10 +256,6 @@ a {
                     right: 0 !important;
                     @include transition(1.2s);
                     @include translateZ();
-
-                    p {
-                        overflow-y: scroll !important;
-                    }
                 }
 
                 .game-title {
@@ -312,9 +308,9 @@ a {
                         @include translateZ();
 
                         p {
-                            height: 200px;
+                            height: 230px;
                             width: 100%;
-                            overflow-y: hidden;
+                            overflow-y: scroll;
                             padding-right: 17px;
                             white-space: normal;
                         }
@@ -325,6 +321,7 @@ a {
                             .go-back {
                                 font-size: 14px;
                                 display: inline-block;
+                                margin-top: 5px;
                                 margin-bottom: 3px;
                             }
                         }
