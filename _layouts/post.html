@@ -7,7 +7,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Games</title>
+        <title>Curate Games</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700">
         <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="/css/main.css">
@@ -86,7 +86,10 @@
                                 <div class="game-score-length-container game-info">
                                     <span class="game-how-long">
                                         <i class="fa fa-clock-o category-icon" aria-hidden="true"></i>
-                                        {{ page.howLong }} hours
+                                        {{ page.howLong }}
+                                        {% if page.howLong != 'Run-based' %}
+                                            hours
+                                        {% endif %}
                                         <a href="{{ page.howLongToBeatLink }}" target="_blank" class="btn">
                                             <img class="external-link-icon" src="/assets/icons/external-link.svg" />
                                         </a>
@@ -105,12 +108,18 @@
                                         {% for i in (1..page.replayValue) %}
                                             <i class="fa fa-star" aria-hidden="true"></i>
                                         {% endfor %}
+                                        {% if page.rHalfStar %}
+                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        {% endif %}
                                     </span>
                                     <span class="game-difficulty-container">
                                         <div class="game-difficulty">Difficulty</div>
                                         {% for i in (1..page.difficulty) %}
                                             <i class="fa fa-star" aria-hidden="true"></i>
                                         {% endfor %}
+                                        {% if page.dHalfStar %}
+                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        {% endif %}
                                     </span>
                                 </div>
                                 <div class="game-blurb-review game-info">
