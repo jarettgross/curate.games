@@ -15,13 +15,19 @@
 
     .sidebar-close {
         position: absolute;
-        width: 30px;
-        height: 30px;
+        left: calc(100vw - 40px);
+        width: 40px;
+        height: 40px;
         cursor: pointer;
     }
 
     .sidebar-container-open {
+        left: 0 !important;
+    }
+
+    .sidebar-container {
         width: 100vw !important;
+        left: -100vw;
     }
 
     .main-open {
@@ -30,6 +36,7 @@
     }
 
     .main {
+        overflow: hidden;
 
         .nav-bar {
             width: 80% !important;

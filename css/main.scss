@@ -16,6 +16,14 @@
 // General
 //============
 
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
@@ -52,10 +60,19 @@ a {
 // Background
 //============
 
+.background-overlay-wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
 .background-overlay {
     position: absolute;
-    height: 100vh;
-    width: 100vw;
+    height: 120vh;
+    width: 120vw;
+    margin-top: -10vh;
+    margin-left: -10vw;
     background-color: #000;
     background-repeat: no-repeat;
     background-size: cover;
@@ -80,32 +97,17 @@ a {
 //============
 
 .sidebar-container-open {
-    width: 250px !important;
+    left: 0 !important;
 }
 
 .sidebar-container {
     position: absolute;
-    width: 0;
+    width: 250px;
+    left: -250px;
     height: 100vh;
     overflow: hidden;
     @include transition(1.2s);
     @include translateZ();
-
-    #sidebar-up {
-        position: absolute;
-        top: 1%;
-        width: 100%;
-        text-align: center;
-        cursor: default;
-    }
-
-    #sidebar-down {
-        position: absolute;
-        top: 95%;
-        width: 100%;
-        text-align: center;
-        cursor: default;
-    }
 
     .sidebar {
         margin: 30px 0;
@@ -117,8 +119,7 @@ a {
         bottom: 0;
         right: -17px;
         position: absolute;
-        -webkit-mask-image: -webkit-gradient(linear, left 50%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.2)));
-        mask-image: gradient(linear, left 50%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.2)));
+        -webkit-mask-image: -webkit-gradient(linear, left 80%, left bottom, from(#000), to(rgba(0,0,0,0.05)));
 
         .post-link {
             white-space: nowrap;
@@ -179,6 +180,8 @@ a {
         @include justify-content(space-between);
 
         .btn-change-post-wrapper {
+            white-space: nowrap;
+            overflow-x: hidden;
             min-width: 120px;
             font-size: 14px;
             text-transform: uppercase;
@@ -381,7 +384,15 @@ a {
 
     .footer {
         height: 40px;
+        width: 100%;
         margin-bottom: 15px;
+        text-align: right;
+
+        .btn-twitter {
+            height: 20px;
+            margin-top: 20px;
+            margin-right: 20px;
+        }
     }
 }
 

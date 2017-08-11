@@ -93,21 +93,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('.btn-play').classList.remove('hide');
     });
 
-    // Show/hide the up and down arrows for the sidebar depending on scroll height
-    document.querySelector('.sidebar').addEventListener('scroll', function(event) {
-        if (event.target.scrollHeight - event.target.scrollTop > event.target.offsetHeight) {
-            document.querySelector('#sidebar-down').classList.remove('hide');
-        } else {
-            document.querySelector('#sidebar-down').classList.add('hide');
-        }
-
-        if (event.target.scrollTop === 0) {
-            document.querySelector('#sidebar-up').classList.add('hide');
-        } else {
-            document.querySelector('#sidebar-up').classList.remove('hide');
-        }
-    });
-
     // Show/hide the up and down arrows for the review depending on scroll height
     document.querySelector('.full-review').addEventListener('scroll', function(event) {
         if (event.target.scrollHeight - event.target.scrollTop > event.target.offsetHeight) {
