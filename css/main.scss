@@ -313,6 +313,11 @@ a {
                             overflow-y: scroll;
                             padding-right: 17px;
                             white-space: normal;
+
+                            .review-header {
+                                font-weight: 600;
+                                display: block; 
+                            }
                         }
 
                         .go-back-container {
