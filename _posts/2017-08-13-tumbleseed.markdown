@@ -28,7 +28,7 @@ review: |
     <br><br>
 
     <span class="review-header">Gameplay</span>
-    The unique controls and the procedurally-generated maps are the main drawn of the game. Each run, which can last anywhere from 5 minutes to around 40 minutes, is different, which gives the game a lot of replayability. The controls will take some getting used to and are what makes the game so difficult. It is easy to lose control of your character if you're trying to get out of danger, and this can lead you to running into enemies or falling into holes. If you're able to adapt to the controls, which can take you a couple hours or more, there's a good chance you'll get hooked, wanting to place "one more run".
+    The unique controls and the procedurally-generated maps are the main draw of the game. Each run, which can last anywhere from 5 minutes to around 40 minutes, is different, which gives the game a lot of replayability. The controls will take some getting used to and are what makes the game so difficult. It is easy to lose control of your character if you're trying to get out of danger, and this can lead you to running into enemies or falling into holes. If you're able to adapt to the controls, which can take you a couple hours or more, there's a good chance you'll get hooked, wanting to place "one more run".
 
     <br><br>
 
