@@ -108,8 +108,11 @@ $gameDetailsHeight: 300px - 30px;
                 }
 
                 .game-full-review {
+                    height: $gameDetailsHeight;
+
                     p {
                         width: 100% !important;
+                        height: 85% !important;
                     }
                 }
 
