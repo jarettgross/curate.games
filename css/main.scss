@@ -229,7 +229,7 @@ a {
             display: inline-block;
             vertical-align: top;
             text-align: left;
-            max-width: 230px;
+            max-width: 300px;
             height: 300px;
 
             .game-details-wrapper {
@@ -240,7 +240,7 @@ a {
                 //============
 
                 .game-info-right {
-                    left: 250px !important;
+                    left: 310px !important;
                     @include transition(1.2s);
                     @include translateZ();
                 }
@@ -297,11 +297,12 @@ a {
                     .game-blurb-review {
                         white-space: normal;
                         height: 100px;
+                        max-width: 230px;
                     }
 
                     .game-full-review {
                         position: relative;
-                        right: 250px;
+                        right: 300px;
                         top: -270px;
                         overflow: hidden;
                         @include transition(1.2s);
@@ -309,14 +310,14 @@ a {
 
                         p {
                             height: 230px;
-                            width: 100%;
+                            width: 300px;
                             overflow-y: scroll;
                             padding-right: 17px;
                             white-space: normal;
 
                             .review-header {
                                 font-weight: 600;
-                                display: block; 
+                                display: block;
                             }
                         }
 
