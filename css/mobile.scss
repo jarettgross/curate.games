@@ -47,7 +47,8 @@ $gameDetailsHeight: 300px - 30px;
         }
 
         #ytplayer {
-            width: 100%;
+            width: 100% !important;
+            height: 300px !important;
             margin: auto !important;
             top: 0 !important;
             right: 0 !important;
