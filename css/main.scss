@@ -4,6 +4,8 @@
 //============
 // Variables
 //============
+$primaryHeight: 450px;
+$primaryWidth: 770px;
 
 //============
 // Imports
@@ -172,7 +174,7 @@ a {
     @include justify-content(space-between);
 
     .nav-bar {
-        width: 500px;
+        width: $primaryWidth;
         min-height: 40px;
         margin-top: 15px;
         @include disableHighlight;
@@ -202,8 +204,8 @@ a {
     }
 
     .game-info-container {
-        width: 500px;
-        height: 300px;
+        width: 770px;
+        height: $primaryHeight;
         margin: auto;
         text-align: center;
         white-space: nowrap;
@@ -213,7 +215,7 @@ a {
         .img-lg {
             display: inline-block;
             margin-right: 20px;
-            height: 300px;
+            height: $primaryHeight;
             @include disableHighlight;
         }
 
@@ -221,7 +223,7 @@ a {
             position: absolute;
             display: block;
             height: 50px;
-            margin-top: 250px;
+            margin-top: 400px;
             cursor: pointer;
         }
 
@@ -230,7 +232,7 @@ a {
             vertical-align: top;
             text-align: left;
             max-width: 300px;
-            height: 300px;
+            height: $primaryHeight;
 
             .game-details-wrapper {
                 height: 100%;
@@ -265,7 +267,7 @@ a {
 
                 .game-details {
                     overflow: hidden;
-                    max-height: 270px;
+                    max-height: 420px;
 
                     .game-score-length-container {
                         margin-bottom: 10px;
@@ -309,7 +311,7 @@ a {
                         @include translateZ();
 
                         p {
-                            height: 230px;
+                            height: 380px;
                             width: 300px;
                             overflow-y: scroll;
                             padding-right: 17px;
@@ -365,6 +367,8 @@ a {
                 }
 
                 .game-price-container {
+                    position: relative;
+                    top: 150px;
                     line-height: 2.1em;
 
                     .game-price {

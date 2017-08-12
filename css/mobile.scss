@@ -1,9 +1,12 @@
 ---
 ---
 
-// Mobile CSS goes here
-// main.scss is wrapped in a media query,
-// so no media queries needed here
+//============
+// Variables
+//============
+$gameDetailsContainerHeight: 300px;
+$gameDetailsHeight: 300px - 30px;
+
 
 //============
 // Imports
@@ -86,6 +89,11 @@
                 margin: auto !important;
                 width: 50%;
                 min-width: 230px;
+                height: $gameDetailsContainerHeight;
+
+                .game-details {
+                    max-height: $gameDetailsHeight !important;
+                }
 
                 .game-title {
                     text-align: center !important;
@@ -101,6 +109,10 @@
                     p {
                         width: 100% !important;
                     }
+                }
+
+                .game-price-container {
+                    top: 0% !important;
                 }
             }
         }
