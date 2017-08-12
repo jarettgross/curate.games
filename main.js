@@ -110,6 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.onresize = function() {
         document.body.height = window.innerHeight;
+        document.querySelector('.background-overlay-wrapper').height = window.innerHeight;
     }
     window.onresize();
 });

@@ -42,13 +42,6 @@
             width: 80% !important;
         }
 
-        .btn-play {
-            position: relative !important;
-            display: inline-block !important;
-            margin-top: 210px !important;
-            margin-right: -50px !important;
-        }
-
         #ytplayer {
             margin: auto !important;
             top: 0 !important;
@@ -66,10 +59,24 @@
             @include justify-content(flex-start);
 
             .game-image-container {
+                height: calc(100% - 300px) !important;
+                max-height: 300px;
+                min-height: 100px;
+                margin-top: 10px;
+
+                .btn-play {
+                    position: relative;
+                    display: inline-block;
+                    margin-right: -50px !important;
+                    z-index: 2 !important;
+                    margin-top: 0;
+                }
 
                 .img-lg {
-                    height: 260px !important;
+                    height: 95% !important;
+                    z-index: 1 !important;
                     margin-right: 0 !important;
+                    vertical-align: top;
                 }
             }
 
