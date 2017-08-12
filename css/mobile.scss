@@ -109,6 +109,7 @@ $gameDetailsHeight: 300px - 30px;
 
                 .game-full-review {
                     height: $gameDetailsHeight;
+                    overflow-y: visible;
 
                     p {
                         width: 100% !important;
