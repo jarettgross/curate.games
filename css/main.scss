@@ -24,6 +24,7 @@ html, body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    font-size: 16px;
 }
 
 body, h1, h2, h3, h4, h5, h6,
@@ -144,7 +145,7 @@ a {
                 margin-left: 5px;
 
                 .post-date {
-                    font-size: 12px;
+                    font-size: 12px !important;
                     color: #e2e2e2;
                 }
             }
@@ -185,7 +186,7 @@ a {
             white-space: nowrap;
             overflow-x: hidden;
             min-width: 120px;
-            font-size: 14px;
+            font-size: 14px !important;
             text-transform: uppercase;
             line-height: 40px;
         }
@@ -291,7 +292,7 @@ a {
                     }
 
                     .read-more {
-                        font-size: 14px;
+                        font-size: 14px !important;
                         margin-top: 5px;
                         display: inline-block;
                     }
@@ -327,7 +328,7 @@ a {
                             height: 26px;
 
                             .go-back {
-                                font-size: 14px;
+                                font-size: 14px !important;
                                 display: inline-block;
                                 margin-top: 5px;
                                 margin-bottom: 3px;
@@ -335,7 +336,7 @@ a {
                         }
 
                         #review-up {
-                            font-size: 10px;
+                            font-size: 10px !important;
                             height: 10px;
                             margin-top: -15px;
                             margin-bottom: 5px;
@@ -344,7 +345,7 @@ a {
                         }
 
                         #review-down {
-                            font-size: 10px;
+                            font-size: 10px !important;
                             height: 10px;
                             margin-top: 5px;
                             text-align: center;
@@ -360,7 +361,7 @@ a {
                     .external-link-icon {
                         cursor: pointer;
                         margin-left: 3px;
-                        font-size: 10px;
+                        font-size: 10px !important;
                         height: 16px;
                         vertical-align: middle;
                     }
@@ -372,7 +373,7 @@ a {
                     line-height: 2.1em;
 
                     .game-price {
-                        font-size: 20px;
+                        font-size: 20px !important;
                     }
 
                     .game-purchase-link {
