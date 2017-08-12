@@ -84,6 +84,8 @@
 
             .game-details-container {
                 margin: auto !important;
+                width: 50%;
+                min-width: 230px;
 
                 .game-title {
                     text-align: center !important;
@@ -92,6 +94,12 @@
                 .game-blurb-review {
                     p {
                         width: 230px;
+                    }
+                }
+
+                .game-full-review {
+                    p {
+                        width: 100% !important;
                     }
                 }
             }
