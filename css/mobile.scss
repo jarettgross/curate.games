@@ -43,8 +43,10 @@
         }
 
         .btn-play {
+            position: relative !important;
             display: inline-block !important;
             margin-top: 210px !important;
+            margin-right: -50px !important;
         }
 
         #ytplayer {
