@@ -107,6 +107,11 @@ document.addEventListener('DOMContentLoaded', function() {
             document.querySelector('#review-up').innerHTML = '▲';
         }
     });
+
+    window.onresize = function() {
+        document.body.height = window.innerHeight;
+    }
+    window.onresize();
 });
 
 // Enable Array.from in IE
