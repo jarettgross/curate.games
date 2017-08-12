@@ -37,12 +37,14 @@
 
     .main {
         overflow: hidden;
+        height: 100%;
 
         .nav-bar {
             width: 80% !important;
         }
 
         #ytplayer {
+            width: 100%;
             margin: auto !important;
             top: 0 !important;
             right: 0 !important;
@@ -85,6 +87,12 @@
 
                 .game-title {
                     text-align: center !important;
+                }
+
+                .game-blurb-review {
+                    p {
+                        width: 230px;
+                    }
                 }
             }
         }
