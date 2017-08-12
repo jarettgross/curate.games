@@ -7,21 +7,48 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Games</title>
+        <title>Curate Games</title>
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/favicon/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/favicon/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/favicon/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/favicon/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/favicon/apple-touch-icon-60x60.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/favicon/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/favicon/apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/favicon/apple-touch-icon-152x152.png" />
+        <link rel="icon" type="image/png" href="/favicon/favicon-196x196.png" sizes="196x196" />
+        <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="/favicon/favicon-128.png" sizes="128x128" />
+        <meta name="application-name" content="&nbsp;"/>
+        <meta name="msapplication-TileColor" content="#FFFFFF" />
+        <meta name="msapplication-TileImage" content="/favicon/mstile-144x144.png" />
+        <meta name="msapplication-square70x70logo" content="/favicon/mstile-70x70.png" />
+        <meta name="msapplication-square150x150logo" content="/favicon/mstile-150x150.png" />
+        <meta name="msapplication-wide310x150logo" content="/favicon/mstile-310x150.png" />
+        <meta name="msapplication-square310x310logo" content="/favicon/mstile-310x310.png" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700">
         <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="/css/mobile.css">
         <script src="/main.js"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-79730010-3', 'auto');
+            ga('send', 'pageview');
+        </script>
     </head>
     <body>
-        <div class="background-overlay" style="background-image:url('/assets/images/{{ page.image }}')"></div>
+        <div class="background-overlay-wrapper">
+            <div class="background-overlay" style="background-image:url('/assets/images/{{ page.image }}')"></div>
+        </div>
         <div class="page-wrapper">
             <div class="sidebar-container">
                 <img class="btn sidebar-close hide" src="/assets/icons/close.svg" />
-                <div id="sidebar-up" class="hide">
-                    ▲
-                </div>
                 <div class="sidebar">
                     {% for post in site.posts %}
                         <a href="{{ post.url }}" class="post-link btn-highlight">
@@ -36,9 +63,6 @@
                             </div>
                         </a>
                     {% endfor %}
-                </div>
-                <div id="sidebar-down">
-                    ▼
                 </div>
             </div>
             <div class="main">
@@ -63,7 +87,7 @@
                 <div class="game-info-container">
                     <iframe class="hide" id="ytplayer" type="text/html" width="500" height="300" frameborder="0"
                         src="https://www.youtube.com/embed/{{ page.video }}" allowfullscreen></iframe>
-                    <div>
+                    <div class="game-image-container">
                         <img class="btn btn-play" src="/assets/icons/play.svg" />
                         <img class="img-lg" src="/assets/images/{{ page.image }}" />
                     </div>
@@ -75,10 +99,17 @@
                                     <i class="fa fa-gamepad category-icon" aria-hidden="true"></i>
                                     {{ page.platforms }}
                                 </div>
+                                <div class="game-year game-info">
+                                    <i class="fa fa-calendar-o category-icon" aria-hidden="true"></i>
+                                    {{ page.year }}
+                                </div>
                                 <div class="game-score-length-container game-info">
                                     <span class="game-how-long">
                                         <i class="fa fa-clock-o category-icon" aria-hidden="true"></i>
-                                        {{ page.howLong }} hours
+                                        {{ page.howLong }}
+                                        {% if page.howLong != 'Run-based' %}
+                                            hours
+                                        {% endif %}
                                         <a href="{{ page.howLongToBeatLink }}" target="_blank" class="btn">
                                             <img class="external-link-icon" src="/assets/icons/external-link.svg" />
                                         </a>
@@ -97,12 +128,18 @@
                                         {% for i in (1..page.replayValue) %}
                                             <i class="fa fa-star" aria-hidden="true"></i>
                                         {% endfor %}
+                                        {% if page.rHalfStar %}
+                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        {% endif %}
                                     </span>
                                     <span class="game-difficulty-container">
                                         <div class="game-difficulty">Difficulty</div>
                                         {% for i in (1..page.difficulty) %}
                                             <i class="fa fa-star" aria-hidden="true"></i>
                                         {% endfor %}
+                                        {% if page.dHalfStar %}
+                                            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        {% endif %}
                                     </span>
                                 </div>
                                 <div class="game-blurb-review game-info">
@@ -125,7 +162,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="footer"></div>
+                <div class="footer">
+                    <a href="http://twitter.com/curategames" target="_blank">
+                        <img class="btn btn-twitter" src="/assets/icons/twitter.svg" />
+                    </a>
+                </div>
             </div>
         </div>
     </body>
