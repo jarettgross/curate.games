@@ -1,5 +1,10 @@
 document.documentElement.setAttribute('data-agent', navigator.userAgent);
 
+var player;
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('ytplayer', {});
+}
+
 document.addEventListener('DOMContentLoaded', function() {
 
     // Pop out sidebar, move main div to right, hide nav bar
@@ -91,6 +96,8 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('.game-details-container').classList.remove('hide');
         document.querySelector('.img-lg').classList.remove('hide');
         document.querySelector('.btn-play').classList.remove('hide');
+
+        player.pauseVideo();
     });
 
     // Show/hide the up and down arrows for the review depending on scroll height
