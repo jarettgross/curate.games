@@ -26,6 +26,7 @@ $gameDetailsHeight: 300px - 30px;
 
     .sidebar-container-open {
         left: 0 !important;
+        overflow: hidden !important;
     }
 
     .sidebar-container {
