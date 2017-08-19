@@ -16,6 +16,14 @@ $gameDetailsHeight: 300px - 30px;
 
 @include mobile {
 
+    html {
+        overflow: hidden !important;
+    }
+
+    body {
+        position: fixed !important;
+    }
+
     .sidebar-close {
         position: absolute;
         left: calc(100vw - 40px);
