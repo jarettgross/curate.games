@@ -80,7 +80,7 @@
                     <span class="btn-change-post-wrapper">
                         {% if page.next %}
                             <a class="btn-change-post btn btn-text" href="{{ page.next.url }}">
-                                {{ page.next.date | date: "%A, %B %e" }} ⮕
+                                {{ page.next.date | date: "%A, %B %e" }} <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                             </a>
                         {% endif %}
                     </span>
