@@ -75,11 +75,15 @@ $gameDetailsHeight: 300px - 30px;
             @include justify-content(flex-start);
 
             .game-image-container {
-                height: 100px !important;
+                height: calc(90% - 300px) !important;
+                position: relative;
                 margin-top: 10px;
 
                 .btn-play {
-                    position: relative;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
                     display: inline-block;
                     margin-right: -50px !important;
                     z-index: 2 !important;
@@ -87,7 +91,11 @@ $gameDetailsHeight: 300px - 30px;
                 }
 
                 .img-lg {
-                    height: 100px !important;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    height: 100% !important;
                     z-index: 1 !important;
                     margin-right: 0 !important;
                     vertical-align: top;
