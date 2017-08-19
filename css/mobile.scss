@@ -75,7 +75,7 @@ $gameDetailsHeight: 300px - 30px;
             @include justify-content(flex-start);
 
             .game-image-container {
-                height: 40% !important;
+                height: calc(95% - 300px) !important;
                 max-height: 300px;
                 min-height: 100px;
                 margin-top: 10px;
@@ -90,6 +90,7 @@ $gameDetailsHeight: 300px - 30px;
 
                 .img-lg {
                     height: 95% !important;
+                    max-height: 95% !important;
                     z-index: 1 !important;
                     margin-right: 0 !important;
                     vertical-align: top;
