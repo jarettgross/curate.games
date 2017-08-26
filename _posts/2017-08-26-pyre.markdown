@@ -1,0 +1,42 @@
+---
+layout: post
+published: true
+
+date:        2017-08-26 13:00:00 -0400
+title:       Pyre
+image:       Pyre.png
+platforms:   PS4, Steam
+year:        2017
+howLong:     10
+score:       8.5
+replayValue: 3
+rHalfStar:   true
+difficulty:  3
+dHalfStar:   false
+price:       20
+video:       H9vlxE0mw28?start=0
+
+howLongToBeatLink: https://howlongtobeat.com/game.php?id=40340
+metacriticLink:    http://www.metacritic.com/game/playstation-4/pyre
+purchaseLink:      http://store.steampowered.com/app/462770/Pyre/
+
+blurb: A beautiful party RPG, sports simulation game that is fast-paced, challenging, and unique.
+review: |
+    <span class="review-header">Overview</span>
+    Supergiant Games' latest title, Pyre, is best described as a party RPG crossed with a sports simulation. In this game, you assemble a team of exiles and have them compete in rituals called “Rites” to earn back their freedom. Each exile you add to your party falls into one of eight different classes, and since each Rite requires three exiles, this leads to a huge number of possible character and class combinations to try. The actual gameplay of the Rites has a simple premise – take a ball and put it in your opponent’s Pyre. This underlying simplicity belies a complex game, one which is satisfyingly fast-paced, challenging, and fairly unique. Combined with Pyre’s excellent visuals and music and its truly immersive story, this creates a very satisfying gameplay experience.
+
+    <br><br>
+
+    <span class="review-header">Controls</span>
+    At the start of Pyre, the Rites are not particularly hard and may not challenge player’s skills. As the game progresses, however, the enemies in the Rites hone their skills and increase their intelligence, leading to more engaging trials. For players who want an even greater test of their skills, after a certain point the game allows players to invoke ancient demons in their Rites, which increase the difficulty even more and give the player additional bonuses for success. This mechanic allows players to fine-tune the difficulty of each Rite, giving a satisfying experience for those wanting a more casual experience, and those wishing to triumph over god level difficulty.
+
+    <br><br>
+
+    <span class="review-header">Cool Features</span>
+    Although the gameplay is very unique, Pyre’s standout feature is its character development and worldbuilding. In addition to the one hundred plus pages of lore for the world, Pyre weaves in a ton of character-character interactions. Player choices are the primary trigger for these exchanges, as where you go for your Rites, which characters are still in your party, and even which dialogue lines you choose influence what your party members talk about. It is impossible to explore every character fully in the space of one play through, adding an additional level of replay value for those interested in really getting to know their band of exiles.
+
+    <br><br>
+
+    <span class="review-header">Is it for you?</span>
+    Pyre features unique and entertaining gameplay, and has one of the most in depth and immersive story telling experiences of any recent game. The amount of content included in the game, and the high level of the content, more than warrants its price, and should keep players coming back to Pyre for years to come.
+---
