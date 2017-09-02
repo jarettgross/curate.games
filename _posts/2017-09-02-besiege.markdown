@@ -1,0 +1,42 @@
+---
+layout: post
+published: true
+
+date:        2017-09-02 12:00:00 -0400
+title:       Besiege
+image:       Besiege.png
+platforms:   Steam
+year:        2015
+howLong:     15
+score:       9
+replayValue: 4
+rHalfStar:   true
+difficulty:  3
+dHalfStar:   true
+price:       8
+video:       RyJnIoqYiOM?start=23
+
+howLongToBeatLink: https://howlongtobeat.com/game.php?id=40340
+metacriticLink:    http://store.steampowered.com/app/346010/Besiege/
+purchaseLink:      http://store.steampowered.com/app/346010/Besiege/
+
+blurb: A physics-based, siege-engine building game where your imagination is the limit.
+review: |
+    <span class="review-header">Overview</span>
+    Besiege has the player create machines to complete various objectives. The player is able to construct many different types of siege-engines, from flying, flamethrower-wielding vehicles to massive, steamrolling tanks. Players put different parts together, such as wooden blocks, wheels, propellers, and cannons, to build their ideal machine to complete the level objective. The game is composed of a variety of levels with different missions, like kill all the enemies, or destroy all of the buildings, and these levels can be solved in a countless number of ways.
+
+    <br><br>
+
+    <span class="review-header">Gameplay</span>
+    Each level starts the player with just one cube as the machine, which, by itself, cannot do anything. The player then attaches other parts to this initial cube to create a destructive machine. This is done by clicking on parts in a minimalistic, clean UI, and then clicking on the machine to place the parts. Once the player has built something satisfactory, then the level can begin with the "play" button. This gives the player full control over the machine, which, depending on the parts used, can be controlled with the keyboard for actions such as moving, firing weapons, or flying. If the level has many enemies, they will charge or shoot arrows at the player. If the level has buildings that need to be destroyed, then they can be ablaze.
+
+    <br><br>
+
+    <span class="review-header">Other Features</span>
+    Machines can be saved and loaded for later use, so a creation is never lost. This is feature is further expanded by the Steam Workshop, which allows users to share their creations online and download them to use in-game. The game's online community has created various mods, ranging from more construction materials to different skins.
+
+    <br><br>
+
+    <span class="review-header">Is it for you?</span>
+    Although Besiege is still in Early Access, it is masterfully made, from its minimalistic art-style to its innovative level design. Each level provides a different challenge which usually requires a different machine. This is a great physics-based building game for anyone who has even a little imaginative power. Building complex machines can be a bit of a daunting task, but as you play the game more, you will get better at building incredible machines. There are enough levels to keep you occupied for quite a bit, and even just building machines to complete a level faster is a blast.
+---
