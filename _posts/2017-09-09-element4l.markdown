@@ -1,0 +1,44 @@
+---
+layout: post
+published: true
+
+date:        2017-09-09 12:00:00 -0400
+title:       Element4l
+image:       Element4l.png
+platforms:   Steam, PSVita
+year:        2013
+howLong:     5
+score:       7.7
+replayValue: 2
+rHalfStar:   false
+difficulty:  4
+dHalfStar:   false
+price:       9
+video:       1djyAdppgjY?start=10
+
+howLongToBeatLink: https://howlongtobeat.com/game.php?id=3076
+metacriticLink:    http://www.metacritic.com/game/pc/element4l
+purchaseLink:      http://store.steampowered.com/app/235820/Element4l/
+
+blurb: An interesting and well-executed puzzle-platformer with a beautiful atmosphere.
+review: |
+    <span class="review-header">Overview</span>
+    Element4l puts a twist on the puzzle-platforming genre with its unique movement mechanics, which has the player switch between the four elements -- air, earth, water, fire -- to reach the end of the level. Each of these elements moves the character differently, and combining these movement options yields fluid gameplay and difficult platforming. The game has a charming atmosphere with a great, relaxing soundtrack and cute, simple artwork. There is a slight story with some minimal text narration, but it is not an integral part of the game.
+
+    <br><br>
+
+    <span class="review-header">Gameplay</span>
+    The concept for each of the levels is what you would expect from a puzzle-platform -- start somewhere and reach the goal. By combining the use of the four elements, you have a variety of movement options that can propel in any direction. You must work with your environment, using steep slopes for momentum, hot air for rising up, and walls to bounce off of. The gameplay heavily relies on physics and quick-thinking, as you have to be ready to switch to a different element at the perfect time to make a jump or reach the top of a cliff. This isn't easy and can take many tries until you succeed at a certain section of a level. Thankfully, Element4l has checkpoints littered throughout each level, so if you fail, you can get right back into it. You will struggle quite a bit before mastering the controls, as some levels require very specific timing and creative element combinations, but reaching the goal afterwards gives you immense satisfaction.
+
+    <br><br>
+
+    <span class="review-header">Other Features</span>
+    To add in some replay value, there are various collectables to find throughout the levels. These can be very difficult to reach, requiring some of that perfect timing and quick-thinking, but they do provide a good challenge for if you want to 100% the game.
+    <br>
+    There is also a time trial mode, where you will make laps around various track-like maps, trying to reach the finish as quickly as possible. This is a nice side mode, especially if you get stuck in one of the main levels and need to take a break.
+
+    <br><br>
+
+    <span class="review-header">Is it for you?</span>
+    The game may only be a few hours long, but it's a unique and fun take on the puzzle-platforming genre. If you want a good challenge and don't mind getting a little frustrated, then you'll have a good time. The controls are responsive and the movement is fluid. Element4l definitely feels like a puzzle-platformer despite the twist on movement mechanics, and if you love this genre then you'll be right at home.
+---
