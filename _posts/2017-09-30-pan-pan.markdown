@@ -1,0 +1,45 @@
+---
+layout: post
+published: true
+
+date:        2017-09-30 12:00:00 -0400
+title:       Pan-Pan
+image:       PanPan.png
+platforms:   Switch, Steam
+year:        2016
+howLong:     1.5
+score:       8
+replayValue: 1
+rHalfStar:   false
+difficulty:  3
+dHalfStar:   true
+price:       5
+video:       P_79mR7rMtI?start=92
+
+howLongToBeatLink: https://howlongtobeat.com/game.php?id=39512
+metacriticLink:    http://www.metacritic.com/game/switch/pan-pan-a-tiny-big-adventure
+purchaseLink:      http://www.nintendo.com/games/detail/pan-pan-a-tiny-big-adventure-switch
+
+giveaway:     false
+giveawayLink: https://twitter.com
+
+blurb: A gorgeous, relaxing, mini adventure with smartly designed puzzles.
+review: |
+    <span class="review-header">Overview</span>
+    Pan-Pan sets the player on an adventure to repair a crash-landed spacecraft. The player must solve environmental puzzles in order to find parts to repair the ship. These puzzles involve playing around with what's in the environment, moving items to different locations, and performing proper sequences of actions. As the player progresses through the game and solves puzzles, more areas become open and abilities are bestowed upon the character. These abilities lead to deeper, longer, and more difficult puzzles, all taking place on a gorgeous, minimalistic planet. Accompanying the beautiful art-style, the sound effects of the game are adorable and fit perfectly with the unique-looking characters and brightly colored world.
+
+    <br><br>
+
+    <span class="review-header">Gameplay</span>
+    The game consists of moving, using items, and interacting with objects. These simple controls will make you work out complex puzzles as you scour the world for parts to fix your ship. There are various areas within Pan-Pan, with each one designated by a specific color-scheme. Puzzles are usually self-contained within these areas, and as you solve them, more areas will open up. Some puzzles require specific items while others will have you carefully inspect your surroundings for what's available. Progressing through the game will award you with a couple of new abilities and make seemingly impossible puzzles, possible.
+
+    <br><br>
+
+    <span class="review-header">Other Features</span>
+    The game supports up to three save files.
+
+    <br><br>
+
+    <span class="review-header">Is it for you?</span>
+    Pan-Pan is a delightful, small game. Although it only takes about an hour and a half to complete, every aspect of the world is carefully crafted and well-thought out, leading to satisfying puzzles and smooth gameplay. The game has no repetition, and each puzzle is unique and requires an entirely new solution. There will most likely be times where you are stuck, but if you inspect your surroundings and think it through, solutions will always make sense. The beautiful art-style and cute sound effects will put a smile on your face throughout your adventure, and you'll want to explore every single nook and cranny of the planet. If you are a fan of puzzle-adventure games, especially short and cute ones, then go and buy Pan-Pan.
+---
