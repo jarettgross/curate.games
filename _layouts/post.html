@@ -150,6 +150,9 @@
                                 <div class="game-price-container game-info">
                                     <span class="game-price">${{ page.price }}</span>
                                     <a href="{{ page.purchaseLink }}" target="_blank" class="game-purchase-link btn-highlight">BUY</a>
+                                    {% if page.giveaway %}
+                                        <a href="{{ page.giveawayLink }}" target="_blank" class="game-purchase-link btn-highlight">GIVEAWAY</a>
+                                    {% endif %}
                                 </div>
                                 <div class="game-full-review">
                                     <div class="go-back-container">
