@@ -131,7 +131,14 @@
                                         {% endfor %}
                                         {% if page.rHalfStar %}
                                             <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        {% else %}
+                                            <i class="fa fa-star-o" aria-hidden="true"></i>
                                         {% endif %}
+                                        {% for i in (1..4) %}
+                                            {% if i > page.replayValue %}
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            {% endif %}
+                                        {% endfor %}
                                     </span>
                                     <span class="game-difficulty-container">
                                         <div class="game-difficulty">Difficulty</div>
@@ -140,7 +147,14 @@
                                         {% endfor %}
                                         {% if page.dHalfStar %}
                                             <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                        {% else %}
+                                            <i class="fa fa-star-o" aria-hidden="true"></i>
                                         {% endif %}
+                                        {% for i in (1..4) %}
+                                            {% if i > page.difficulty %}
+                                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                            {% endif %}
+                                        {% endfor %}
                                     </span>
                                 </div>
                                 <div class="game-blurb-review game-info">
