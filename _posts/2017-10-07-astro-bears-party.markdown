@@ -20,8 +20,8 @@ howLongToBeatLink:
 metacriticLink:    http://www.metacritic.com/game/switch/astro-bears-party
 purchaseLink:      https://www.nintendo.com/games/detail/astro-bears-party-switch
 
-giveaway:     false
-giveawayLink: https://twitter.com/curategames/
+giveaway:     true
+giveawayLink: https://twitter.com/curategames/status/916709714427351041
 
 blurb: A highly polished, simple, and fun multiplayer game that anyone can play.
 review: |
