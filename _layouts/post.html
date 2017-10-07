@@ -108,12 +108,18 @@
                                     <span class="game-how-long">
                                         <i class="fa fa-clock-o category-icon" aria-hidden="true"></i>
                                         {{ page.howLong }}
-                                        {% if page.howLong != 'Run-based' %}
+                                        {% if page.howLong != 'Run-based' and page.howLong != 'N/A' %}
                                             hours
                                         {% endif %}
-                                        <a href="{{ page.howLongToBeatLink }}" target="_blank" class="btn">
-                                            <img class="external-link-icon" src="/assets/icons/external-link.svg" />
-                                        </a>
+                                        {% if page.howLong != 'N/A' %}
+                                            <a href="{{ page.howLongToBeatLink }}" target="_blank" class="btn">
+                                                <img class="external-link-icon" src="/assets/icons/external-link.svg" />
+                                            </a>
+                                        {% else %}
+                                            <span class="btn">
+                                                <img class="external-link-icon" src="/assets/icons/external-link.svg" />
+                                            </span>
+                                        {% endif %}
                                     </span>
                                     <span class="game-score">
                                         <i class="fa fa-line-chart category-icon" aria-hidden="true"></i>
