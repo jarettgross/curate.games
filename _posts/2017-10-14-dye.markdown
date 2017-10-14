@@ -1,0 +1,52 @@
+---
+layout: post
+published: true
+
+date:        2017-10-14 12:00:00 -0400
+title:       DYE
+image:       Dye.png
+platforms:   Steam
+year:        2017
+howLong:     10+
+score:       8
+replayValue: 4
+rHalfStar:   false
+difficulty:  5
+dHalfStar:   false
+price:       10
+video:       XLmxXMW84Tw?start=8
+
+hasHowLongToBeat:  false
+howLongToBeatLink:
+metacriticLink:    http://store.steampowered.com/app/503550
+purchaseLink:      http://store.steampowered.com/app/503550
+
+giveaway:     false
+giveawayLink: https://twitter.com/curategames/
+
+blurb: A rock-solid, fun, and satisfying platformer...if you're up for a challenge.
+review: |
+    <span class="review-header">Overview</span>
+    At its core, DYE is a pure platformer where the player must carefully run and jump through various levels with different types of platforms and enemies. The player controls a small character, Hue, who can jump and float across levels, trying to collect as many of the collectibles (Pigments) as possible before reaching the exit. The Pigments give color to each (originally gray) level and don't have any effect on the gameplay. As the levels themselves get increasingly difficult, the locations of the Pigments are put in more devious locations. The player needs to collect some number of Pigments in order to unlock more levels -- so it's vital that the player collects Pigments along the way to the exit. With fourteen levels per world, and four worlds in total, DYE keeps throwing in more challenging obstacles and more interesting level designs that will you keep you coming back. Although the art-style is simple and only varies slightly between worlds, it's still well-done and fits with the platforming theme. The music is upbeat and sounds great, fitting perfectly with the fast-paced action of the game.
+
+    <br><br>
+
+    <span class="review-header">Gameplay</span>
+    DYE gives you exactly what you would expect from a platformer and handles each aspect wonderfully. Each action you can make is very responsive, offering tight controls that make for a strong platformer. As you're running, wall-jumping, and floating around levels, the movement starts to click, and those precise jumps feel natural. Each level consists of various obstacles, with plenty of static spikes, moving spikes, and jumping enemies. There are a variety of different platforms, like mine carts that move when you jump in them, platforms that move only when you stand on them, and ice platforms that melt if you're on fire. All of these ideas build up into more complex, tougher levels as you progress through the game. Trying to work your way through a level is a challenge by itself, and adding on the fact that you need to collect Pigments found in dangerous locations makes this game extremely challenging. You'll die a lot, but thanks to checkpoints within the level and quick load times, you'll keep coming bac.
+
+    <br><br>
+
+    <span class="review-header">Cool Features</span>
+    DYE features two difficulties for each level: normal and hard. Normal mode has checkpoints throughout levels and is already a good challenge. Hard mode removes these checkpoints and adds in obstacles -- most likely at the exact spots you utilized in normal mode -- that make each level extremely difficult.
+    <br><br>
+    Included in each of the four worlds, there are four challenge levels which have you collect 100 "dust", with every 20 "dust" giving you one Pigment. These levels are similar to the regular levels -- tough, precision platforming -- but adds a nice change of pace by giving you a different goal to reach.
+    <br><br>
+    Additionally, at the end of each world, there is a unique boss fight, requiring some quick-thinking and fast-paced movement if you want to come out on top.
+    <br><br>
+    Each level has an online leaderboard, ranking the fastest times that the level was completed in.
+
+    <br><br>
+
+    <span class="review-header">Is it for you?</span>
+    DYE is a hardcore platformer all throughout its campaign. As you progress, the levels get more difficult and force you to learn through trial and error. If you aren't afraid of a challenge and don't mind dying countless times, then you'll have some fun. The game does a good job of building up its platforming elements, introducing you to new obstacles and new ideas. The level design is fantastic, with every platform carefully placed to give a smooth experience, built quite well for speed-running. DYE doesn't try to stand out with any one-of-a-kind ideas, but instead puts to use a slew of platforming elements to make a rock-solid, tough platformer.
+---
