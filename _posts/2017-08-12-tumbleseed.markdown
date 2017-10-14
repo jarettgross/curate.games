@@ -16,6 +16,7 @@ dHalfStar:   true
 price:       15
 video:       w0SHWvIOE7Q?start=134
 
+hasHowLongToBeat:  true
 howLongToBeatLink: https://howlongtobeat.com/game.php?id=45539
 metacriticLink:    http://www.metacritic.com/game/switch/tumbleseed
 purchaseLink:      http://store.steampowered.com/app/457890/TumbleSeed/

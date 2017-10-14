@@ -16,6 +16,7 @@ dHalfStar:   false
 price:       20
 video:       BzaodOazzDo?start=95
 
+hasHowLongToBeat:  true
 howLongToBeatLink: https://howlongtobeat.com/game.php?id=25685
 metacriticLink:    http://www.metacritic.com/game/wii-u/affordable-space-adventures
 purchaseLink:      http://www.nintendo.com/games/detail/affordable-space-adventures-wii-u

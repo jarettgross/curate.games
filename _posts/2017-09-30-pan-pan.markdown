@@ -16,6 +16,7 @@ dHalfStar:   true
 price:       5
 video:       P_79mR7rMtI?start=92
 
+hasHowLongToBeat:  true
 howLongToBeatLink: https://howlongtobeat.com/game.php?id=39512
 metacriticLink:    http://www.metacritic.com/game/switch/pan-pan-a-tiny-big-adventure
 purchaseLink:      http://www.nintendo.com/games/detail/pan-pan-a-tiny-big-adventure-switch

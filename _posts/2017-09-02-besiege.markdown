@@ -16,6 +16,7 @@ dHalfStar:   true
 price:       8
 video:       RyJnIoqYiOM?start=23
 
+hasHowLongToBeat:  true
 howLongToBeatLink: https://howlongtobeat.com/game.php?id=40340
 metacriticLink:    http://store.steampowered.com/app/346010/Besiege/
 purchaseLink:      http://store.steampowered.com/app/346010/Besiege/

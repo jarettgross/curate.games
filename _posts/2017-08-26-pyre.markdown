@@ -16,6 +16,7 @@ dHalfStar:   false
 price:       20
 video:       H9vlxE0mw28?start=0
 
+hasHowLongToBeat:  true
 howLongToBeatLink: https://howlongtobeat.com/game.php?id=40340
 metacriticLink:    http://www.metacritic.com/game/playstation-4/pyre
 purchaseLink:      http://store.steampowered.com/app/462770/Pyre/

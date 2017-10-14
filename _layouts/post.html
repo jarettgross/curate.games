@@ -111,7 +111,7 @@
                                         {% if page.howLong != 'Run-based' and page.howLong != 'N/A' %}
                                             hours
                                         {% endif %}
-                                        {% if page.howLong != 'N/A' %}
+                                        {% if page.howLong != 'N/A' and page.hasHowLongToBeat %}
                                             <a href="{{ page.howLongToBeatLink }}" target="_blank" class="btn">
                                                 <img class="external-link-icon" src="/assets/icons/external-link.svg" />
                                             </a>

@@ -16,6 +16,7 @@ dHalfStar:   false
 price:       9
 video:       1djyAdppgjY?start=10
 
+hasHowLongToBeat:  true
 howLongToBeatLink: https://howlongtobeat.com/game.php?id=3076
 metacriticLink:    http://www.metacritic.com/game/pc/element4l
 purchaseLink:      http://store.steampowered.com/app/235820/Element4l/

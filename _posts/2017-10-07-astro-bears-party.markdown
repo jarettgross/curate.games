@@ -16,6 +16,7 @@ dHalfStar:   true
 price:       5
 video:       m9ZiXKvSYao?start=9
 
+hasHowLongToBeat:  false
 howLongToBeatLink:
 metacriticLink:    http://www.metacritic.com/game/switch/astro-bears-party
 purchaseLink:      https://www.nintendo.com/games/detail/astro-bears-party-switch

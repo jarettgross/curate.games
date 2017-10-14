@@ -16,6 +16,7 @@ dHalfStar:   true
 price:       17
 video:       qoKu7Gr0Mm8?start=0
 
+hasHowLongToBeat:  true
 howLongToBeatLink: https://howlongtobeat.com/game.php?id=45727
 metacriticLink:    http://store.steampowered.com/app/588650/Dead_Cells/
 purchaseLink:      http://store.steampowered.com/app/588650/Dead_Cells/

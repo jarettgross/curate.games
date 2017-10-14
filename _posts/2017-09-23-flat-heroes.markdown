@@ -16,6 +16,7 @@ dHalfStar:   false
 price:       8
 video:       h_yeBJgcOxU?start=240
 
+hasHowLongToBeat:  true
 howLongToBeatLink: https://howlongtobeat.com/game.php?id=42805
 metacriticLink:    http://store.steampowered.com/app/508790/Flat_Heroes/
 purchaseLink:      http://store.steampowered.com/app/508790/Flat_Heroes/
