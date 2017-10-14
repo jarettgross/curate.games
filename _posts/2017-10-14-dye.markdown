@@ -21,8 +21,8 @@ howLongToBeatLink:
 metacriticLink:    http://store.steampowered.com/app/503550
 purchaseLink:      http://store.steampowered.com/app/503550
 
-giveaway:     false
-giveawayLink: https://twitter.com/curategames/
+giveaway:     true
+giveawayLink: https://twitter.com/curategames/status/919246727772819457
 
 blurb: A rock-solid, fun, and satisfying platformer...if you're up for a challenge.
 review: |
