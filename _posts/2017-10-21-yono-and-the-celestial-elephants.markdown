@@ -21,8 +21,8 @@ howLongToBeatLink: https://howlongtobeat.com/game.php?id=49685
 metacriticLink:    http://www.metacritic.com/game/switch/yono-and-the-celestial-elephants
 purchaseLink:      http://store.steampowered.com/app/602430/Yono_and_the_Celestial_Elephants/
 
-giveaway:     false
-giveawayLink: https://twitter.com/curategames
+giveaway:     true
+giveawayLink: https://twitter.com/curategames/status/921782956858990592
 
 blurb: A simple, enjoyable puzzle-adventure with an adorable aesthetic and kind-hearted story.
 review: |
