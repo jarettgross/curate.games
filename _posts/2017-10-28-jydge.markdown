@@ -1,0 +1,50 @@
+---
+layout: post
+published: true
+
+date:        2017-10-28 12:00:00 -0400
+title:       JYDGE
+image:       Jydge.png
+platforms:   PS4, Steam, Switch, Xbox One
+year:        2017
+howLong:     8
+score:       7.7
+replayValue: 4
+rHalfStar:   false
+difficulty:  4
+dHalfStar:   false
+price:       15
+video:       x1kfO0B2Rco?start=230
+
+hasHowLongToBeat:  false
+howLongToBeatLink:
+metacriticLink:    http://www.metacritic.com/game/playstation-4/jydge
+purchaseLink:      http://store.steampowered.com/app/654050/JYDGE/
+
+giveaway:     false
+giveawayLink: https://twitter.com/curategames
+
+blurb: A highly customizable, top-down shooter that's a blast to play through.
+review: |
+    <span class="review-header">Overview</span>
+    JYDGE is a top-down shooter, where you play as a customizable law enforcement robot trying to stop criminal activity. As the JYDGE, you have to shoot down enemies with your gun as they shoot to kill you in a bullet-hell manner. You work your way through buildings, completing objectives to both finish the level and earn money. These objectives range from rescuing civilians to killing specific targets to defusing a bomb within 60 seconds. Each objective you complete gives you a medal which will unlock more levels for you to play through. Money that you earn can be used to buy a variety of upgrades for your robo-cop, such as a hacking tool to open doors or a shield to block bullets. The money can also be used to buy special weapons like grenades or change your gun to a shotgun, sniper rifle, or a slew of other choices. The JYDGE is highly customizable, and you'll want to pick the right equipment for the right mission. Each mission takes place in a similarly styled neon-lit area, with some building in the center for you to infiltrate and some greenery surrounding it. It's pleasant to look at and everything important is clearly visible, which makes running and gunning enjoyable and fair. Each of the multiple soundtracks is upbeat and sounds great, providing just the right atmosphere for taking down criminals.
+
+    <br><br>
+
+    <span class="review-header">Gameplay</span>
+    The game comes down to running around with your JYDGE, firing your weapon, and using your specials to kill enemies or stealthily maneuver around the map to complete your objectives. Although the levels are fairly similar in design, there are enough objectives to keep this concept from getting stale. Each new map is fun to play through, and when you die (which will probably happen often), you can jump back into it almost immediately. Depending on the objectives and the map, you'll want to swap out your JYDGE's components to better fit your needs, such as giving civilians more health on a rescue mission or shrinking yourself. This adds an extra layer of strategy to the game, as you'll be switching your JYDGE almost constantly during later levels on higher difficulties. These difficulties will unlock as you finish specific maps of the 18 that are in the game, and will give you access to more objectives. Thanks to the large number of unlocks, almost every objective or two that you complete will give you something new and exciting to play with. Although some weapons and upgrades are obviously worse than others, they are still fun to play around with and might come in handy for that one specific objective you can't complete.
+
+    <br><br>
+
+    <span class="review-header">Cool Features</span>
+    JYDGE allows for an additional player to join in as a second JYDGE, joining the primary player in taking down criminals. This doesn't add more difficulty, but it makes for a fun addition if you want to play with a friend.
+    <br><br>
+    The four difficulties you'll unlock bring multiple new objectives. Some of these are impressively difficult and will require a good amount of perseverance to finish.
+    <br><br>
+    Scattered between maps, there are multiple collectibles to find throughout the game. These collectibles will buff your JYDGE slightly, like improving your reload speed, or give more interesting effects, like increasing the amount of blood and gore, showing a ghost of your previous run, or slowing down time. Finding these collectibles will often result in finding secret areas, which although small, provide a few unique and fun scenarios. These aren't simple to find, so be ready to look for a long time.
+
+    <br><br>
+
+    <span class="review-header">Is it for you?</span>
+    At its core, JYDGE is a top-down shooter with some bullet-hell mixed in. It isn't like your typical bullet-hell with a constant stream of bullets on the screen following a pattern, but instead has enemies hunting you down around the map, shooting their bullets or rocket launchers at you. Killing these enemies is both enjoyable and satisfying, and with the addition of some strategy, you'll find playing the JYDGE to be quite fun. Sometimes you'll be able to jump to the middle of the map and take out every enemy, but other times you'll have to lure them around a wall and take out the five or six enemies with a single special. On top of this, the customizable JYDGE lets you have a different experience each time, and at one point or another, you'll try out almost every option it has as you try to find that perfect combination for a tough objective. There's enough content here to make the main game last about 8 hours, and there are countless more hours if you want to unlock everything, find all the collectibles, and 100% each map. If all of this sounds attractive to you, then JYDGE will do a great job standing out in your library.
+---
