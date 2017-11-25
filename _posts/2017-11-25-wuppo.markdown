@@ -1,0 +1,51 @@
+---
+layout: post
+published: true
+
+date:        2017-11-25 11:00:00 -0400
+title:       Wuppo
+image:       Wuppo.png
+platforms:   PS4, Steam, Xbox One
+year:        2016
+howLong:     11
+score:       8
+replayValue: 3
+rHalfStar:   false
+difficulty:  3
+dHalfStar:   false
+price:       15
+video:       h_TxsFl7qcA?start=0
+
+hasHowLongToBeat:  true
+howLongToBeatLink: https://howlongtobeat.com/game.php?id=40259
+metacriticLink:    http://www.metacritic.com/game/pc/wuppo
+purchaseLink:      http://store.steampowered.com/app/400630/Wuppo/
+
+giveaway:     false
+giveawayLink: https://twitter.com/curategames
+
+blurb: With nonstop fun and adventure, you'll immediately be amazed by what Wuppo has to offer.
+review: |
+    <span class="review-header">Overview</span>
+    Wuppo is a beautifully crafted mixture of platforming, story-telling, exploration, and a bunch of other elements that you wouldn't think fit together. You begin your story as a young, lazy Wum -- the primary species of the world -- who gets kicked out of the Wumhouse and must explore the world in search of a new home. Throughout your journey, you'll come across numerous characters, each with their own playful, unique personality. You need to talk to these characters to advance your journey, helping to solve problems or trying to find out where you can get a new home. Conversations have multiple tracks they can take depending on your responses, and it's worthwhile to try out each one -- they're funny and clever and sometimes you'll get a nice reward. To reach these characters, you need to traverse various areas around the world, with each one carefully themed and wonderfully laid out. No two areas are remotely the same, and yet the world feels and  flows naturally. The game has an endearing, child-like look to it that works its way into the story, making for some funny moments and allowing for perfectly fitting sound effects and a delightful soundtrack.
+
+    <br><br>
+
+    <span class="review-header">Gameplay</span>
+    Wuppo manages to mesh together a large variety of gameplay elements in an ingenious manner, with never a dull moment. You'll be constantly travelling the world, exploring each crevice of every area, trying to kill enemies, find secrets, and pick up items. The game has many platforming elements in it, although by no means is it purely a platformer. You'll run around, hopping on platforms and performing double jumps, but this is mostly a method of transportation. The main features of the game are finding new objectives to take on by talking to the countless characters in the world and seeing what's going on. You'll take on primary objectives and side objectives of all sorts, like cleaning dust out of the Wumhouse, culminating in a boss fight, or helping out the underground Wum city. There are just under 20 boss fights in the game, some hidden and some part of the story, each of which provide a nice challenge and are evenly spaced throughout your adventure. These are bigger, longer fights than the typical enemies you come across, and it's fun every time to see what new ideas are implemented. Wuppo incorporates some puzzle elements in some of its objectives, too. These puzzles are never too complicated, but they're all distinct and add fun twists here and there. There are even more gameplay elements you'll discover as you play, giving you  many distractions to seek out and explore.
+
+    <br><br>
+
+    <span class="review-header">Cool Features</span>
+    Filmstrips are hidden in areas, and you can watch each one to learn more about the lore of the world or just have a laugh. Collecting these filmstrips will give you rewards and an incentive to explore.
+    <br><br>
+    Instead of typical health upgrades, Wuppo lets you increase your health by increasing your "happiness", which can be done by completing side quests, defeating bosses, picking good dialogue, and in a few other ways. These health upgrades come in handy when fighting some of the tougher bosses.
+    <br><br>
+    You can earn a form of currency to spend in shops, letting you buy healing items, upgrades for your gumgumgun, or some funny hats. You can earn money by completing side quests, killing enemies, or selling off some items you don't need.
+
+    <br><br>
+
+    <span class="review-header">Is it for you?</span>
+    There aren't many games that will amaze you within the first five minutes, but Wuppo manages to do just that. Right from the start it's easy to fall in love with the game. You can immediately tell that the developers put a lot of thought and care into every aspect of the game. The art may look simplistic, but it is endearing, grows on you quickly, and works great with the sound effects. There are so many different aspects to the game that there's something for everyone to enjoy. Whether you like exploring, meeting characters, or battling boss, Wuppo has it all. The world is bustling with activity, making sure you always have something to do or somewhere to explore. It's easy to recommend Wuppo for anyone.
+
+---
