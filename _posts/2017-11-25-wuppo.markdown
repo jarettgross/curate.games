@@ -21,8 +21,8 @@ howLongToBeatLink: https://howlongtobeat.com/game.php?id=40259
 metacriticLink:    http://www.metacritic.com/game/pc/wuppo
 purchaseLink:      http://store.steampowered.com/app/400630/Wuppo/
 
-giveaway:     false
-giveawayLink: https://twitter.com/curategames
+giveaway:     true
+giveawayLink: https://twitter.com/curategames/status/934451641230745601
 
 blurb: With nonstop fun and adventure, you'll immediately be amazed by what Wuppo has to offer.
 review: |
