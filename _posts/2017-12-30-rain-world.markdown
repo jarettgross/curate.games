@@ -21,8 +21,8 @@ howLongToBeatLink: https://howlongtobeat.com/game.php?id=32976
 metacriticLink:    http://www.metacritic.com/game/pc/rain-world
 purchaseLink:      http://store.steampowered.com/app/312520/Rain_World/
 
-giveaway:     false
-giveawayLink: https://twitter.com/curategames
+giveaway:     true
+giveawayLink: https://twitter.com/curategames/status/947143762450542592
 
 blurb: A very difficult, fully fleshed out 2D action-platformer.
 review: |
