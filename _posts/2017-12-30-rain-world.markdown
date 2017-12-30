@@ -24,7 +24,7 @@ purchaseLink:      http://store.steampowered.com/app/312520/Rain_World/
 giveaway:     false
 giveawayLink: https://twitter.com/curategames
 
-blurb:
+blurb: A very difficult, fully fleshed out 2D action-platformer.
 review: |
     <span class="review-header">Overview</span>
     In Rain World, you play as a Slugcat -- a weird, adorable, graceful animal -- in a 2D action-platformer. You are separated from your family during a flood and need to find your way home. You explore a vast, connected environment, consisting of over 1600 rooms (each room takes up the screen), filled with enemies and food. Your Slugcat needs to run away from dangerous  animals and eat pretty much anything smaller than itself in order to hibernate. This relates to the game's titular mechanic, where you need to find protected alcoves for you to hibernate in every so often, otherwise a furious downpour occurs, killing your Slugcat. These alcoves also act as save points where you respawn from if you die or quit out of the game.
