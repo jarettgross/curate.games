@@ -21,8 +21,8 @@ howLongToBeatLink:
 metacriticLink:    http://store.steampowered.com/app/653190/spaceBOUND/
 purchaseLink:      http://store.steampowered.com/app/653190/spaceBOUND/
 
-giveaway:     false
-giveawayLink: https://twitter.com/curategames/
+giveaway:     true
+giveawayLink: https://twitter.com/curategames/status/949634914223304704
 
 blurb: A very challenging 2D puzzle-platformer where two astronauts are bound together by an oxygen tether.
 review: |
