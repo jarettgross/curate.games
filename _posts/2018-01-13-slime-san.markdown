@@ -1,0 +1,51 @@
+---
+layout: post
+published: true
+
+date:        2018-01-13 12:00:00 -0400
+title:       Slime-san
+image:       SlimeSan.png
+platforms:   Steam, Switch
+year:        2017
+howLong:     20
+score:       8
+replayValue: 3
+rHalfStar:   false
+difficulty:  3
+dHalfStar:   false
+price:       12
+video:       tCSF-tKo_Zo?start=11
+
+hasHowLongToBeat:  true
+howLongToBeatLink: https://howlongtobeat.com/game.php?id=44018
+metacriticLink:    http://www.metacritic.com/game/switch/slime-san
+purchaseLink:      http://store.steampowered.com/app/473530/Slimesan/
+
+giveaway:     false
+giveawayLink: https://twitter.com/curategames
+
+blurb: Slime-san is a fast-paced, twitchy 2D platformer with adorable visuals and a pumped up soundtrack.
+review: |
+    <span class="review-header">Overview</span>
+    Slime-san is a fast-paced, twitchy 2D platformer with adorable visuals and a pumped up soundtrack. You play as a slime, ingested by some monster, and have to platform around over 100 levels to make your way out. As a slime, you're a bit sticky and goopy, letting you stick to walls and giving you some strong traction on the ground. This combination, along with the highly responsive movement, makes Slime-san a very solid platformer that never seems to run out of ideas. The art gives the game an old-school retro look with the upbeat music meshing in perfectly. The game is a joy to look at and makes for some adorable characters you'll find throughout.
+
+    <br><br>
+
+    <span class="review-header">Gameplay</span>
+    The gameplay at its core relies on three colors -- green, white, and red -- to dictate what you need to do. Green indicates that your slime can go through the object by holding down a button to become transparent. This puts everything, including you, in slow motion, allowing you to more easily navigate and make more precise jumps. Many of the green objects have unique characteristics, such as bounciness or stickiness. White platforms are safe and you can jump on these at any time -- transparent or not. On the other hand, anything that is red is death -- enemies, platforms, or the acid that creeps up on one side of the level if you're taking too long to complete it. All of these combined make for expertly crafted levels that require quick-thinking and many retries. New ideas come along with every level, keeping things fresh and interesting. To make levels more difficult, there is an apple in each level for you to collect, usually placed in devious locations. Collecting these apples gives you a currency to buy different play styles, shaders, and mini games. As you master the controls of wall-jumping, dashing, and going transparent, you'll feel great satisfaction with the completion of each level. Every action is responsive and the hit boxes are clear and exact. Death feels like your fault and you'll constantly be learning form your mistakes.
+
+    <br><br>
+
+    <span class="review-header">Cool Features</span>
+    Slime-san comes with three extra modes: new game+ (which you'll need to unlock by beating the main game), speed running, and boss rush.
+    <br><br>
+    In each of the five worlds (each with 20 levels), there's a boss at the end of each world. They maintain the core gameplay, but force you to think quite a bit differently!
+    <br><br>
+    In some levels, there are secret exits to find. These lead you special coins which can be used to purchase some old-school mini games, like Slime-san's take on Pong.
+
+    <br><br>
+
+    <span class="review-header">Is it for you?</span>
+    If you like 2D platformers, then you can't go wrong with Slime-san. The game is impressively well-crafted, with brilliant levels and ideas. It's packed full of content, keeping you entertained for many hours, especially if you're trying to 100% the game, or even just collect most of the apples. The game never stops moving thanks to its small and short levels and this lets it throw as many ideas as possible at you. The different play styles are fun to mess around with and can help you solve some difficult levels by finding the right character to play as. There's a ton to love in Slime-san and you'll just keep wanting more.
+
+---
